@@ -8,7 +8,6 @@ public class InnovationIncognitoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(InnovationIncognitoApplication.class, args);
-		System.out.println();
 
 	}
 
