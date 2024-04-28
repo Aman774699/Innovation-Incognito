@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    height: 90vh;
+    height: 75vh;
     /* background: #000; */
 }
 .black {
@@ -224,6 +224,7 @@ a, button {
     color: #fff;
     cursor: pointer;
 }
+
 .user img, .user p {
     opacity: 1;
 }

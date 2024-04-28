@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <link rel="shortcut icon" type="png" th:href="@{/images/icon/favicon.png}">
+    <link rel="shortcut icon" type="png" th:href="@{/Images/icon/favicon.png}">
     <title>Computer Science Courses on LearnEd</title>
-    <link rel="stylesheet" type="text/css" th:href="@{/subjects.css}">
-    <script type="text/javascript" th:src="@{/script.js}"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+    <script type="text/javascript" th:src="@{/js/script.js}"></script>
 </head>
 <body>
-<!-- Your HTML content here -->
-
-
-
-<!-- NAVIGATION -->
 <header>
     <div class="nav" id="nav">
         <div id="learned-logo">
             <a th:href="@{/index.html}">
                 <img th:src="@{/Images/icon/logo.png}" style="width: 120px;">
             </a></div>
-        <div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img th:src="@{/images/icon/menu.png}">
+        <div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img th:src="@{/Images/icon/menu.png}">
         </div>
         <ul id="list-switch">
             <li><a th:href="@{/jee.html}"><img th:src="@{/Images/courses/d1.png}" class="icon" alt="JEE">JEE</a></li>
@@ -49,8 +44,6 @@
     </div>
 </div>
 
-
-<!-- Some KeyWords related to Topic -->
 <div class="course">
     <div class="cbox">
         <div class="det"><a th:href="@{/java}">Java</a></div>
@@ -94,16 +87,16 @@
     <center>
         <div class="ccardbox">
             <div class="dcard">
-                <div class="fpart"><img th:src="@{/images/courses/java-course.jpg}"></div>
-                <a th:href="@{/java}"><div class="spart">2 Courses <img th:src="@{/images/icon/dropdown.png}"></div></a>
+                <div class="fpart"><img th:src="@{/Images/courses/java-course.jpg}"></div>
+                <a th:href="@{/java}"><div class="spart">2 Courses <img th:src="@{/Images/icon/dropdown.png}"></div></a>
             </div>
             <div class="dcard">
-                <div class="fpart"><img th:src="@{/images/courses/python-course.png}"></div>
-                <a th:href="@{/python}"><div class="spart">5 Courses <img th:src="@{/images/icon/dropdown.png}"></div></a>
+                <div class="fpart"><img th:src="@{/Images/courses/python-course.png}"></div>
+                <a th:href="@{/python}"><div class="spart">5 Courses <img th:src="@{/Images/icon/dropdown.png}"></div></a>
             </div>
             <div class="dcard">
-                <div class="fpart"><img th:src="@{/images/courses/c-course.jpg}"></div>
-                <a th:href="@{/cplusplus}"><div class="spart">3 Courses <img th:src="@{/images/icon/dropdown.png}"></div></a>
+                <div class="fpart"><img th:src="@{/Images/courses/c-course.jpg}"></div>
+                <a th:href="@{/cplusplus}"><div class="spart">3 Courses <img th:src="@{/Images/icon/dropdown.png}"></div></a>
             </div>
         </div>
 
@@ -111,21 +104,22 @@
 
         <div class="ccardbox">
             <div class="dcard">
-                <div class="fpart"><img th:src="@{/images/courses/web-course.jpg}"></div>
-                <a th:href="@{/html_css}"><div class="spart">6 Courses <img th:src="@{/images/icon/dropdown.png}"></div></a>
+                <div class="fpart"><img th:src="@{/Images/courses/web-course.jpg}"></div>
+                <a th:href="@{/html_css}"><div class="spart">6 Courses <img th:src="@{/Images/icon/dropdown.png}"></div></a>
             </div>
             <div class="dcard">
-                <div class="fpart"><img th:src="@{/images/courses/data-course.jpg}"></div>
-                <a th:href="@{/data}"><div class="spart">2 Courses <img th:src="@{/images/icon/dropdown.png}"></div></a>
+                <div class="fpart"><img th:src="@{/Images/courses/data-course.jpg}"></div>
+                <a th:href="@{/data}"><div class="spart">2 Courses <img th:src="@{/Images/icon/dropdown.png}"></div></a>
             </div>
             <div class="dcard">
-                <div class="fpart"><img th:src="@{/images/courses/algo-course.jpg}"></div>
-                <a th:href="@{/algo}"><div class="spart">1 Courses <img th:src="@{/images/icon/dropdown.png}"></div></a>
+                <div class="fpart"><img th:src="@{/Images/courses/algo-course.jpg}"></div>
+                <a th:href="@{/algo}"><div class="spart">1 Courses <img th:src="@{/Images/icon/dropdown.png}"></div></a>
             </div>
         </div>
 
 
-        <!-- Videos on JAVA Lectures -->
+        <!--
+        s on JAVA Lectures -->
         <div class="title2" id="java">
             <span>Start Programming with Java</span>
             <div class="shortdesc2">
@@ -135,62 +129,75 @@
 
         <center>
             <div class="ccardbox2">
-                <div class="dcard2"><span class="tag" th:text="${video1Tag}"></span>
+                <div class="dcard2"><span class="tag" th:text=""></span>
                     <div class="fpart2">
-                        <img th:src="@{/images/courses/java-course.jpg}">
-                        <iframe th:src="${video1Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <img th:src="@{/Images/courses/java-course.jpg}">
+                        <iframe th:src="${1Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="dcard2"><span class="tag" th:text="${video2Tag}"></span>
+                <div class="dcard2"><span class="tag" th:text=""></span>
                     <div class="fpart2">
-                        <img th:src="@{/images/courses/java-course.jpg}">
-                        <iframe th:src="${video2Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <img th:src="@{/Images/courses/java-course.jpg}">
+                        <iframe th:src="${
+                        2Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="dcard2"><span class="tag" th:text="${video3Tag}"></span>
+                <div class="dcard2"><span class="tag" th:text="${
+                3Tag}"></span>
                     <div class="fpart2">
-                        <img th:src="@{/images/courses/java-course.jpg}">
-                        <iframe th:src="${video3Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <img th:src="@{/Images/courses/java-course.jpg}">
+                        <iframe th:src="${
+                        3Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </center>
 
-        <div class="dcard2"><span class="tag" th:text="${video4Tag}"></span>
+        <div class="dcard2"><span class="tag" th:text="${
+        4Tag}"></span>
             <div class="fpart2">
-                <img th:src="@{/images/courses/java-course.jpg}">
-                <iframe th:src="${video4Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img th:src="@{/Images/courses/java-course.jpg}">
+                <iframe th:src="${
+                4Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
-        <div class="dcard2"><span class="tag" th:text="${video5Tag}">5/8</span>
+        <div class="dcard2"><span class="tag" th:text="${
+        5Tag}">5/8</span>
             <div class="fpart2">
-                <img th:src="@{/images/courses/java-course.jpg}">
-                <iframe th:src="${video5Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img th:src="@{/Images/courses/java-course.jpg}">
+                <iframe th:src="${
+                5Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
-        <div class="dcard2"><span class="tag" th:text="${video6Tag}">6/8</span>
+        <div class="dcard2"><span class="tag" th:text="${
+        6Tag}">6/8</span>
             <div class="fpart2">
-                <img th:src="@{/images/courses/java-course.jpg}">
-                <iframe th:src="${video6Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img th:src="@{/Images/courses/java-course.jpg}">
+                <iframe th:src="${
+                6Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
         <div class="dcard2">
-            <span class="tag" th:text="${video7Tag}">7/8</span>
+            <span class="tag" th:text="${
+            7Tag}">7/8</span>
             <div class="fpart2">
-                <img th:src="@{/images/courses/java-course.jpg}">
-                <iframe th:src="${video7Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img th:src="@{/Images/courses/java-course.jpg}">
+                <iframe th:src="${
+                7Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
 
         <div class="dcard2">
-            <span class="tag" th:text="${video8Tag}">8/8</span>
+            <span class="tag" th:text="${
+            8Tag}">8/8</span>
             <div class="fpart2">
-                <img th:src="@{/images/courses/java-course.jpg}">
-                <iframe th:src="${video8Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img th:src="@{/Images/courses/java-course.jpg}">
+                <iframe th:src="${
+                8Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
@@ -201,7 +208,8 @@
         </div>
 
 
-<!-- Videos on C++ Lectures -->
+<!--
+s on C++ Lectures -->
 
         <div class="title2" id="c++">
             <span>Start Programming with C++</span>
@@ -212,69 +220,85 @@
 
         <center>
             <div class="ccardbox2">
-                <div class="dcard2"><span class="tag" th:text="${video1Tag}">1/8</span>
+                <div class="dcard2"><span class="tag" th:text="${
+                1Tag}">1/8</span>
                     <div class="fpart2">
-                        <img th:src="@{/images/courses/c-course.jpg}">
-                        <iframe th:src="${video1Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <img th:src="@{/Images/courses/c-course.jpg}">
+                        <iframe th:src="${
+                        1Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </center>
 
         <div class="dcard2">
-            <span class="tag" th:text="${video2Tag}">2/8</span>
+            <span class="tag" th:text="${
+            2Tag}">2/8</span>
             <div class="fpart2">
-                <img th:src="@{/images/courses/c-course.jpg}">
-                <iframe th:src="${video2Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img th:src="@{/Images/courses/c-course.jpg}">
+                <iframe th:src="${
+                2Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
         <div class="dcard2">
-            <span class="tag" th:text="${video3Tag}">3/8</span>
+            <span class="tag" th:text="${
+            3Tag}">3/8</span>
             <div class="fpart2">
-                <img th:src="@{/images/courses/c-course.jpg}">
-                <iframe th:src="${video3Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img th:src="@{/Images/courses/c-course.jpg}">
+                <iframe th:src="${
+                3Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
         <div class="dcard2">
-            <span class="tag" th:text="${video4Tag}">4/8</span>
+            <span class="tag" th:text="${
+            4Tag}">4/8</span>
             <div class="fpart2">
-                <img th:src="@{/images/courses/c-course.jpg}">
-                <iframe th:src="${video4Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img th:src="@{/Images/courses/c-course.jpg}">
+                <iframe th:src="${
+                4Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
 
         <div class="dcard2">
-            <span class="tag" th:text="${video5Tag}">5/8</span>
+            <span class="tag" th:text="${
+            5Tag}">5/8</span>
             <div class="fpart2">
-                <img th:src="@{/images/courses/c-course.jpg}">
-                <iframe th:src="${video5Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img th:src="@{/Images/courses/c-course.jpg}">
+                <iframe th:src="${
+                5Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
         <div class="dcard2">
-            <span class="tag" th:text="${video6Tag}">6/8</span>
+            <span class="tag" th:text="${
+            6Tag}">6/8</span>
             <div class="fpart2">
-                <img th:src="@{/images/courses/c-course.jpg}">
-                <iframe th:src="${video6Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img th:src="@{/Images/courses/c-course.jpg}">
+                <iframe th:src="${
+                6Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
         <div class="dcard2">
-            <span class="tag" th:text="${video7Tag}">7/8</span>
+            <span class="tag" th:text="${
+            7Tag}">7/8</span>
             <div class="fpart2">
-                <img th:src="@{/images/courses/c-course.jpg}">
-                <iframe th:src="${video7Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img th:src="@{/Images/courses/c-course.jpg}">
+                <iframe th:src="${
+                7Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
         <div class="dcard2">
-            <span class="tag" th:text="${video8Tag}">8/8</span>
+            <span class="tag" th:text="${
+            8Tag}">8/8</span>
             <div class="fpart2">
-                <img th:src="@{/images/courses/c-course.jpg}">
-                <iframe th:src="${video8Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img th:src="@{/Images/courses/c-course.jpg}">
+                <iframe th:src="${
+                8Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
@@ -285,7 +309,8 @@
         </div>
 
 
-<!-- Videos on PYTHON Lectures -->
+<!--
+s on PYTHON Lectures -->
 
         <div class="title2" id="python">
             <span>Start Programming with Python</span>
@@ -297,68 +322,84 @@
 <<center>
         <div class="ccardbox2">
             <div class="dcard2">
-                <span class="tag" th:text="${video1Tag}">1/8</span>
+                <span class="tag" th:text="${
+                1Tag}">1/8</span>
                 <div class="fpart2">
-                    <img th:src="@{/images/courses/python-course.png}">
-                    <iframe th:src="${video1Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img th:src="@{/Images/courses/python-course.png}">
+                    <iframe th:src="${
+                    1Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
 
             <div class="dcard2">
-                <span class="tag" th:text="${video2Tag}">2/8</span>
+                <span class="tag" th:text="${
+                2Tag}">2/8</span>
                 <div class="fpart2">
-                    <img th:src="@{/images/courses/python-course.png}">
-                    <iframe th:src="${video2Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img th:src="@{/Images/courses/python-course.png}">
+                    <iframe th:src="${
+                    2Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
             <div class="dcard2">
-                <span class="tag" th:text="${video3Tag}">3/8</span>
+                <span class="tag" th:text="${
+                3Tag}">3/8</span>
                 <div class="fpart2">
-                    <img th:src="@{/images/courses/python-course.png}">
-                    <iframe th:src="${video3Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img th:src="@{/Images/courses/python-course.png}">
+                    <iframe th:src="${
+                    3Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
             <div class="dcard2">
-                <span class="tag" th:text="${video4Tag}">4/8</span>
+                <span class="tag" th:text="${
+                4Tag}">4/8</span>
                 <div class="fpart2">
-                    <img th:src="@{/images/courses/python-course.png}">
-                    <iframe th:src="${video4Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img th:src="@{/Images/courses/python-course.png}">
+                    <iframe th:src="${
+                    4Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
 
             <div class="dcard2">
-                <span class="tag" th:text="${video5Tag}">5/8</span>
+                <span class="tag" th:text="${
+                5Tag}">5/8</span>
                 <div class="fpart2">
-                    <img th:src="@{/images/courses/python-course.png}">
-                    <iframe th:src="${video5Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img th:src="@{/Images/courses/python-course.png}">
+                    <iframe th:src="${
+                    5Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
             <div class="dcard2">
-                <span class="tag" th:text="${video6Tag}">6/8</span>
+                <span class="tag" th:text="${
+                6Tag}">6/8</span>
                 <div class="fpart2">
-                    <img th:src="@{/images/courses/python-course.png}">
-                    <iframe th:src="${video6Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img th:src="@{/Images/courses/python-course.png}">
+                    <iframe th:src="${
+                    6Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
             <div class="dcard2">
-                <span class="tag" th:text="${video7Tag}">7/8</span>
+                <span class="tag" th:text="${
+                7Tag}">7/8</span>
                 <div class="fpart2">
-                    <img th:src="@{/images/courses/python-course.png}">
-                    <iframe th:src="${video7Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img th:src="@{/Images/courses/python-course.png}">
+                    <iframe th:src="${
+                    7Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
             <div class="dcard2">
-                <span class="tag" th:text="${video8Tag}">8/8</span>
+                <span class="tag" th:text="${
+                8Tag}">8/8</span>
                 <div class="fpart2">
-                    <img th:src="@{/images/courses/python-course.png}">
-                    <iframe th:src="${video8Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img th:src="@{/Images/courses/python-course.png}">
+                    <iframe th:src="${
+                    8Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -370,7 +411,8 @@
             <a th:href="@{https://youtu.be/QXeEoD0pB3E}" target="_blank">Click Here to Watch full playlist</a>
         </div>
 
-<!-- Videos on DATA STRUCTURES Lectures -->
+<!--
+s on DATA STRUCTURES Lectures -->
 
         <div class="title2" id="data">
             <span>Data Structures</span>
@@ -382,68 +424,84 @@
         <center>
             <div class="ccardbox2">
                 <div class="dcard2">
-                    <span class="tag" th:text="${video1Tag}">1/8</span>
+                    <span class="tag" th:text="${
+                    1Tag}">1/8</span>
                     <div class="fpart2">
-                        <img th:src="@{/images/courses/data-course.jpg}">
-                        <iframe th:src="${video1Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <img th:src="@{/Images/courses/data-course.jpg}">
+                        <iframe th:src="${
+                        1Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
             <div class="dcard2">
-                <span class="tag" th:text="${video2Tag}">2/8</span>
+                <span class="tag" th:text="${
+                2Tag}">2/8</span>
                 <div class="fpart2">
-                    <img th:src="@{/images/courses/data-course.jpg}">
-                    <iframe th:src="${video2Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img th:src="@{/Images/courses/data-course.jpg}">
+                    <iframe th:src="${
+                    2Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
 
             <div class="dcard2">
-                <span class="tag" th:text="${video3Tag}">3/8</span>
+                <span class="tag" th:text="${
+                3Tag}">3/8</span>
                 <div class="fpart2">
-                    <img th:src="@{/images/courses/data-course.jpg}">
-                    <iframe th:src="${video3Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img th:src="@{/Images/courses/data-course.jpg}">
+                    <iframe th:src="${
+                    3Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
             <div class="dcard2">
-                <span class="tag" th:text="${video4Tag}">4/8</span>
+                <span class="tag" th:text="${
+                4Tag}">4/8</span>
                 <div class="fpart2">
-                    <img th:src="@{/images/courses/data-course.jpg}">
-                    <iframe th:src="${video4Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img th:src="@{/Images/courses/data-course.jpg}">
+                    <iframe th:src="${
+                    4Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
 
             <div class="dcard2">
-                <span class="tag" th:text="${video5Tag}">5/8</span>
+                <span class="tag" th:text="${
+                5Tag}">5/8</span>
                 <div class="fpart2">
-                    <img th:src="@{/images/courses/data-course.jpg}">
-                    <iframe th:src="${video5Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img th:src="@{/Images/courses/data-course.jpg}">
+                    <iframe th:src="${
+                    5Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
             <div class="dcard2">
-                <span class="tag" th:text="${video6Tag}">6/8</span>
+                <span class="tag" th:text="${
+                6Tag}">6/8</span>
                 <div class="fpart2">
-                    <img th:src="@{/images/courses/data-course.jpg}">
-                    <iframe th:src="${video6Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img th:src="@{/Images/courses/data-course.jpg}">
+                    <iframe th:src="${
+                    6Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
             <div class="dcard2">
-                <span class="tag" th:text="${video7Tag}">7/8</span>
+                <span class="tag" th:text="${
+                7Tag}">7/8</span>
                 <div class="fpart2">
-                    <img th:src="@{/images/courses/data-course.jpg}">
-                    <iframe th:src="${video7Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img th:src="@{/Images/courses/data-course.jpg}">
+                    <iframe th:src="${
+                    7Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
             <div class="dcard2">
-                <span class="tag" th:text="${video8Tag}">8/8</span>
+                <span class="tag" th:text="${
+                8Tag}">8/8</span>
                 <div class="fpart2">
-                    <img th:src="@{/images/courses/data-course.jpg}">
-                    <iframe th:src="${video8Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img th:src="@{/Images/courses/data-course.jpg}">
+                    <iframe th:src="${
+                    8Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -455,7 +513,8 @@
         </div>
 
 
-<!-- Videos on ALGORITHM Lectures -->
+<!--
+s on ALGORITHM Lectures -->
 
         <div class="title2" id="algo">
             <span th:text="#{algorithm.title}">Algorithm</span>
@@ -467,50 +526,60 @@
         <center>
             <div class="ccardbox2">
                 <div class="dcard2">
-                    <span class="tag" th:text="${video1Tag}">1/8</span>
+                    <span class="tag" th:text="${
+                    1Tag}">1/8</span>
                     <div class="fpart2">
-                        <img th:src="@{/images/courses/algo-course.jpg}">
-                        <iframe th:src="${video1Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <img th:src="@{/Images/courses/algo-course.jpg}">
+                        <iframe th:src="${
+                        1Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </center>
 
         <div class="dcard2">
-            <span class="tag" th:text="${video2Tag}">2/8</span>
+            <span class="tag" th:text="${
+            2Tag}">2/8</span>
             <div class="fpart2">
-                <img th:src="@{/images/courses/algo-course.jpg}">
-                <iframe th:src="${video2Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img th:src="@{/Images/courses/algo-course.jpg}">
+                <iframe th:src="${
+                2Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
         <div class="dcard2">
-            <span class="tag" th:text="${video3Tag}">3/8</span>
+            <span class="tag" th:text="${
+            3Tag}">3/8</span>
             <div class="fpart2">
-                <img th:src="@{/images/courses/algo-course.jpg}">
-                <iframe th:src="${video3Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img th:src="@{/Images/courses/algo-course.jpg}">
+                <iframe th:src="${
+                3Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
         <div class="dcard2">
-            <span class="tag" th:text="${video4Tag}">4/8</span>
+            <span class="tag" th:text="${
+            4Tag}">4/8</span>
             <div class="fpart2">
-                <img th:src="@{/images/courses/algo-course.jpg}">
-                <iframe th:src="${video4Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img th:src="@{/Images/courses/algo-course.jpg}">
+                <iframe th:src="${
+                4Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
 
         <div class="dcard2">
-            <span class="tag" th:text="${video5Tag}">5/8</span>
+            <span class="tag" th:text="${
+            5Tag}">5/8</span>
             <div class="fpart2">
-                <img th:src="@{/images/courses/algo-course.jpg}">
-                <iframe th:src="${video5Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img th:src="@{/Images/courses/algo-course.jpg}">
+                <iframe th:src="${
+                5Src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
         <div class="dcard2"><span class="tag" th:text="${tag}">6/8</span>
-            <div class="fpart2"><img th:src="@{/images/courses/algo-course.jpg}">
+            <div class="fpart2"><img th:src="@{/Images/courses/algo-course.jpg}">
                 <iframe th:src="@{https://www.youtube.com/embed/0IAPZzGSbME}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
@@ -518,7 +587,7 @@
         <div class="dcard2">
             <span class="tag">7/8</span>
             <div class="fpart2">
-                <img th:src="@{/images/courses/algo-course.jpg}">
+                <img th:src="@{/Images/courses/algo-course.jpg}">
                 <iframe th:src="@{https://www.youtube.com/embed/0IAPZzGSbME}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
@@ -526,7 +595,7 @@
         <div class="dcard2">
             <span class="tag">8/8</span>
             <div class="fpart2">
-                <img th:src="@{/images/courses/algo-course.jpg}">
+                <img th:src="@{/Images/courses/algo-course.jpg}">
                 <iframe th:src="@{https://www.youtube.com/embed/0IAPZzGSbME}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
@@ -539,7 +608,8 @@
     </div>
 
 
-<!-- Videos on HTML and CSS Lectures -->
+<!--
+s on HTML and CSS Lectures -->
 
     <<div class="title2" id="html_css">
     <span th:text="${title}">Start Programming with HTML and CSS</span>
@@ -553,20 +623,26 @@
     <center>
         <div class="ccardbox2">
             <div class="dcard2">
-                <span class="tag" th:text="${video.tag}">1/8</span>
+                <span class="tag" th:text="${
+                .tag}">1/8</span>
                 <div class="fpart2">
-                    <img th:src="@{${video.imageSrc}}" th:src="@{/images/courses/web-course.jpg}" alt="Course Image">
-                    <iframe th:src="${video.src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img th:src="@{${
+                    .Imagesrc}}" th:src="@{/Images/courses/web-course.jpg}" alt="Course Image">
+                    <iframe th:src="${
+                    .src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
 
 
         <div class="dcard2">
-            <span class="tag" th:text="${video.tag}">2/8</span>
+            <span class="tag" th:text="${
+            .tag}">2/8</span>
             <div class="fpart2">
-                <img th:src="@{${video.imageSrc}}" th:src="@{/images/courses/web-course.jpg}" alt="Course Image">
-                <iframe th:src="${video.src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img th:src="@{${
+                .Imagesrc}}" th:src="@{/Images/courses/web-course.jpg}" alt="Course Image">
+                <iframe th:src="${
+                .src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
@@ -574,50 +650,68 @@
 
 
         <div class="dcard2">
-            <span class="tag" th:text="${video.tag}">1/8</span>
+            <span class="tag" th:text="${
+            .tag}">1/8</span>
             <div class="fpart2">
-                <img th:src="@{${video.imageSrc}}" th:src="@{/images/courses/web-course.jpg}" alt="Course Image">
-                <iframe th:src="${video.src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img th:src="@{${
+                .Imagesrc}}" th:src="@{/Images/courses/web-course.jpg}" alt="Course Image">
+                <iframe th:src="${
+                .src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
 
         <div class="dcard2">
-            <span class="tag" th:text="${video.tag}">1/8</span>
+            <span class="tag" th:text="${
+            .tag}">1/8</span>
             <div class="fpart2">
-                <img th:src="@{${video.imageSrc}}" th:src="@{/images/courses/web-course.jpg}" alt="Course Image">
-                <iframe th:src="${video.src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img th:src="@{${
+                .Imagesrc}}" th:src="@{/Images/courses/web-course.jpg}" alt="Course Image">
+                <iframe th:src="${
+                .src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
 
 <div class="dcard2">
-    <span class="tag" th:text="${video.tag}">1/8</span>
+    <span class="tag" th:text="${
+    .tag}">1/8</span>
     <div class="fpart2">
-        <img th:src="@{${video.imageSrc}}" th:src="@{/images/courses/web-course.jpg}" alt="Course Image">
-        <iframe th:src="${video.src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img th:src="@{${
+        .Imagesrc}}" th:src="@{/Images/courses/web-course.jpg}" alt="Course Image">
+        <iframe th:src="${
+        .src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
 
 <div class="dcard2">
-    <span class="tag" th:text="${video.tag}">1/8</span>
+    <span class="tag" th:text="${
+    .tag}">1/8</span>
     <div class="fpart2">
-        <img th:src="@{${video.imageSrc}}" th:src="@{/images/courses/web-course.jpg}" alt="Course Image">
-        <iframe th:src="${video.src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img th:src="@{${
+        .Imagesrc}}" th:src="@{/Images/courses/web-course.jpg}" alt="Course Image">
+        <iframe th:src="${
+        .src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>   <div class="dcard2">
-        <span class="tag" th:text="${video.tag}">1/8</span>
+        <span class="tag" th:text="${
+        .tag}">1/8</span>
         <div class="fpart2">
-            <img th:src="@{${video.imageSrc}}" th:src="@{/images/courses/web-course.jpg}" alt="Course Image">
-            <iframe th:src="${video.src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <img th:src="@{${
+            .Imagesrc}}" th:src="@{/Images/courses/web-course.jpg}" alt="Course Image">
+            <iframe th:src="${
+            .src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 
         <div class="dcard2">
-            <span class="tag" th:text="${video.tag}">1/8</span>
+            <span class="tag" th:text="${
+            .tag}">1/8</span>
             <div class="fpart2">
-                <img th:src="@{${video.imageSrc}}" th:src="@{/images/courses/web-course.jpg}" alt="Course Image">
-                <iframe th:src="${video.src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img th:src="@{${
+                .Imagesrc}}" th:src="@{/Images/courses/web-course.jpg}" alt="Course Image">
+                <iframe th:src="${
+                .src}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
@@ -632,7 +726,8 @@
     </div>
 
 
-    <!-- Videos on JAVASCRIPT Lectures -->
+    <!--
+    s on JAVASCRIPT Lectures -->
 
     <div class="title2" id="javascript">
         <span th:text="#{startProgrammingJavaScript}">Start Programming with JavaScript</span>
@@ -641,29 +736,30 @@
         </div>
     </div>
 
+
     <center>
         <div class="ccardbox2">
             <div class="dcard2"><span class="tag" >1/8</span>
-                <div class="fpart2"><img th:src="@{/images/courses/javascript-course.jpg}">
+                <div class="fpart2"><img th:src="@{/Images/courses/javascript-course.jpg}">
                     <iframe th:src="@{https://www.youtube.com/embed/uDwSnnhl1Ng}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
 
             <div class="dcard2"><span class="tag">2/8</span>
-                <div class="fpart2"><img th:src="@{/images/courses/javascript-course.jpg}">
+                <div class="fpart2"><img th:src="@{/Images/courses/javascript-course.jpg}">
                     <iframe th:src="@{https://www.youtube.com/embed/uDwSnnhl1Ng}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
             <div class="dcard2"><span class="tag">3/8</span>
-                <div class="fpart2"><img th:src="@{/images/courses/javascript-course.jpg}">
+                <div class="fpart2"><img th:src="@{/Images/courses/javascript-course.jpg}">
                     <iframe th:src="@{https://www.youtube.com/embed/uDwSnnhl1Ng}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
             <div class="dcard2"><span class="tag">4/8</span>
-                <div class="fpart2"><img th:src="@{/images/courses/javascript-course.jpg}">
+                <div class="fpart2"><img th:src="@{/Images/courses/javascript-course.jpg}">
                     <iframe th:src="@{https://www.youtube.com/embed/uDwSnnhl1Ng}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
@@ -671,7 +767,7 @@
             <div class="dcard2">
                 <span class="tag" th:text="${tag}">5/8</span>
                 <div class="fpart2">
-                    <img th:src="@{/images/courses/javascript-course.jpg}">
+                    <img th:src="@{/Images/courses/javascript-course.jpg}">
                     <iframe th:src="@{https://www.youtube.com/embed/uDwSnnhl1Ng}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
@@ -680,7 +776,7 @@
             <div class="dcard2">
                 <span class="tag" th:text="${tag}">6/8</span>
                 <div class="fpart2">
-                    <img th:src="@{/images/courses/javascript-course.jpg}">
+                    <img th:src="@{/Images/courses/javascript-course.jpg}">
                     <iframe src="https://www.youtube.com/embed/uDwSnnhl1Ng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
@@ -689,14 +785,14 @@
             <div class="dcard2" th:each="item, iterStat : ${projects}">
                 <span class="tag" th:text="${item.tag}">7/8</span>
                 <div class="fpart2">
-                    <img th:src="@{../images/courses/javascript-course.jpg}">
+                    <img th:src="@{/Images/courses/javascript-course.jpg}">
                     <iframe src="https://www.youtube.com/embed/uDwSnnhl1Ng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="dcard2" th:each="item, iterStat : ${projects}">
                 <span class="tag" th:text="${item.tag}">8/8</span>
                 <div class="fpart2">
-                    <img th:src="@{../images/courses/javascript-course.jpg}">
+                    <img th:src="@{/Images/courses/javascript-course.jpg}">
                     <iframe src="https://www.youtube.com/embed/uDwSnnhl1Ng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
@@ -717,7 +813,7 @@
 
     <div class="project-panel">
         <div class="project-card" th:each="project : ${projects}">
-            <img th:src="@{../images/projects/__${project.image}__.jpg}">
+            <img th:src="@{/Images/projects/__${project.image}__.jpg}">
             <div class="info">
                 <h4 th:text="${project.name}">Digi Library</h4>
                 <p th:text="${project.description}">Interactive Library Management Software made using JAVA & MySQL</p>
@@ -730,27 +826,34 @@
 <!--    yahi tak-->
 
 </div>
-    <div class="project-card">
-        <img src="../images/projects/p3.jpg">
-        <div class="info">
-            <h4>Photo Gallery</h4><p>This Website helps you to manage your Personal Photos developed using HTML, CSS & JavaScript</p>
-            <div class="download"><a href="https://github.com/roshan9419" target="_blank">Download</a></div>
-        </div>
+<div class="project-card">
+    <img th:src="@{/Images/projects/p3.jpg}" src="/Images/projects/p3.jpg">
+    <div class="info">
+        <h4>Photo Gallery</h4>
+        <p>This Website helps you to manage your Personal Photos developed using HTML, CSS & JavaScript</p>
+        <div class="download"><a th:href="@{https://github.com/roshan9419}" target="_blank">Download</a></div>
     </div>
-    <div class="project-card">
-        <img src="../images/projects/p4.jpg">
-        <div class="info">
-            <h4>Sports Fitness</h4><p>This Website helps you in your favorite Sports made using HTML, CSS & JavaScript</p>
-            <div class="download"><a href="https://github.com/roshan9419" target="_blank">Download</a></div>
-        </div>
+</div>
+
+
+<div class="project-card">
+    <img th:src="@{/Images/projects/p4.jpg}" src="/Images/projects/p4.jpg">
+    <div class="info">
+        <h4>Sports Fitness</h4>
+        <p>This Website helps you in your favorite Sports made using HTML, CSS & JavaScript</p>
+        <div class="download"><a th:href="@{https://github.com/roshan9419}" target="_blank">Download</a></div>
     </div>
-    <div class="project-card">
-        <img src="../images/projects/p5.jpg">
-        <div class="info">
-            <h4>Smart TMS</h4><p>This Software helps you to managen the records of Challans used in Traffic Management System made using C++</p>
-            <div class="download"><a href="https://github.com/roshan9419/smart_traffic" target="_blank">Download</a></div>
-        </div>
+</div>
+
+<div class="project-card">
+    <img th:src="@{/Images/projects/p5.jpg}" src="../Images/projects/p5.jpg">
+    <div class="info">
+        <h4>Smart TMS</h4>
+        <p>This Software helps you to manage the records of Challans used in Traffic Management System made using C++</p>
+        <div class="download"><a th:href="@{https://github.com/roshan9419/smart_traffic}" target="_blank">Download</a></div>
     </div>
+</div>
+
 
 </div>
 
@@ -760,23 +863,23 @@
 <footer>
     <div class="footer-container">
         <div class="left-col">
-            <img src="../images/icon/logo - Copy.png" style="width: 200px;">
+            <img th:src="@{../Images/icon/logo - Copy.png}" style="width: 200px;">
             <div class="logo"></div>
             <div class="social-media">
-                <a href="#"><img src="../images/icon\fb.png"></a>
-                <a href="#"><img src="../images/icon\insta.png"></a>
-                <a href="#"><img src="../images/icon\tt.png"></a>
-                <a href="#"><img src="../images/icon\ytube.png"></a>
-                <a href="#"><img src="../images/icon\linkedin.png"></a>
+                <a href="#"><img th:src="@{/Images/icon/fb.png}"></a>
+                <a href="#"><img th:src="@{/Images/icon/insta.png}"></a>
+                <a href="#"><img th:src="@{/Images/icon/tt.png}"></a>
+                <a href="#"><img th:src="@{/Images/icon/ytube.png}"></a>
+                <a href="#"><img th:src="@{/Images/icon/linkedin.png}"></a>
             </div><br><br>
-            <p class="rights-text">Copyright © 2021 Created By Roshan Kumar, Abhishek Dulat All Rights Reserved.</p>
-            <br><p><img src="../images/icon/location.png"> Lovely Professional University<br>Phagwara, Punjab-144401</p><br>
-            <p><img src="../images/icon/phone.png"> +91-1234-567-890<br><img src="../images/icon/mail.png">&nbsp; learnedonline9419@gmail.com</p>
+            <p class="rights-text" th:text="#{copyright}">Copyright © 2021 Created By Roshan Kumar, Abhishek Dulat All Rights Reserved.</p>
+            <br><p><img th:src="@{/Images/icon/location.png}"> Lovely Professional University<br>Phagwara, Punjab-144401</p><br>
+            <p><img th:src="@{/Images/icon/phone.png}"> +91-1234-567-890<br><img th:src="@{../Images/icon/mail.png}">&nbsp; learnedonline9419@gmail.com</p>
         </div>
         <div class="right-col">
-            <h1 style="color: #fff">Our Newsletter</h1>
+            <h1 style="color: #fff" th:text="#{newsletter}">Our Newsletter</h1>
             <div class="border"></div><br>
-            <p>Enter Your Email to get our News and updates.</p>
+            <p th:text="#{newsletter_prompt}">Enter Your Email to get our News and updates.</p>
             <form class="newsletter-form">
                 <input class="txtb" type="email" placeholder="Enter Your Email">
                 <input class="btn" type="submit" value="Submit">
@@ -784,6 +887,5 @@
         </div>
     </div>
 </footer>
-
 </body>
 </html>

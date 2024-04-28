@@ -11,14 +11,21 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/user")
 public class UserContoller {
     public boolean b = false;
-    public User userLogin;
+    public static User userLogin = null;
+
 
     @Autowired
     private UserRepositary userRepositary;
 
     @GetMapping("/login")
     public String Login() {
+
         return "Login";
+    }
+
+    @GetMapping("/index")
+    public String index() {
+        return "index";
     }
 
     @PostMapping("/Signup")
