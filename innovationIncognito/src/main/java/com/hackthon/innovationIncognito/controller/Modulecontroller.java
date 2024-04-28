@@ -52,6 +52,15 @@ public class Modulecontroller extends UserContoller {
         }
         return "/subjects/datastructure";
     }
+    @GetMapping("/algorithms")
+    public String algorithm() {
+        if (super.userLogin == null) {
+            return "Login";
+        }
+        return "/subjects/algorithms";
+    }
+
+
 }
 
 

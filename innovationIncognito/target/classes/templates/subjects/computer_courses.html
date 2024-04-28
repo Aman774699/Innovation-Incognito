@@ -1,210 +1,135 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <link rel="shortcut icon" type="png" th:href="@{/Images/icon/favicon.png}">
-    <title>Computer Science Courses on LearnEd</title>
-    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+    <link rel="shortcut icon" type="image/png" th:href="@{/Images/icon/favicon.png}">
+    <title>Prepare for JEE Mains & Advanced</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css//subjects.css}">
     <script type="text/javascript" th:src="@{/js/script.js}"></script>
 </head>
 <body>
+
+<!-- NAVIGATION -->
 <header>
     <div class="nav" id="nav">
         <div id="learned-logo">
-            <a th:href="@{/index.html}">
-                <img th:src="@{/Images/osop.jpg}" style="width: 120px;">
-            </a></div>
-        <div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img th:src="@{/Images/icon/menu.png}">
+            <a th:href="@{/index.html}"><img th:src="@{/Images/osop.jpg}" style="width: 120px; border-radius: 70px;"></a>
+        </div>
+        <div class="switch-tab" id="switch-tab" onclick="switchTAB()">
+            <img th:src="@{/Images/icon/menu.png}">
         </div>
         <ul id="list-switch">
-            <li><a th:href="@{/Module/jee}"><img th:src="@{/Images/courses/d1.png}" class="icon" /></a>JEE</li>
-            <li><a href="#"><img th:src="@{/Images/courses/paper.png}" class="icon" />GATE</a></li>
-            <li><a th:href="@{/Module/computer_courses}"><img th:src="@{/Images/courses/computer.png}" class="icon" />Computer Courses</a></li>
-            <li><a th:href="@{/Module/datastructure}"><img th:src="@{/Images/co<div class="dcard2"><span class="tag">8/55</span>
-                <div class="fpart2"><img th:src="@{/Images/courses/digital.jpg}" />
-                    <iframe th:src="@{https://www.youtube.com/embed/QfSIj5pmeTw?si=Z2O_3jPcZ5r-j6zC}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-    </div>
-    <div class="dcard2"><span class="tag">9/55</span>
-        <div class="fpart2"><img th:src="@{/Images/courses/digital.jpg}" />
-            <iframe th:src="@{https://www.youtube.com/embed/QfSIj5pmeTw?si=Z2O_3jPcZ5r-j6zC}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
-    <div class="dcard2"><span class="tag">10/55</span>
-        <div class="fpart2"><img th:src="@{/Images/courses/digital.jpg}" />
-            <iframe th:src="@{https://www.youtube.com/embed/QfSIj5pmeTw?si=Z2O_3jPcZ5r-j6zC}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
-    <div class="dcard2"><span class="tag">11/55</span>
-        <div class="fpart2"><img th:src="@{/Images/courses/digital.jpg}" />
-            <iframe th:src="@{https://www.youtube.com/embed/QfSIj5pmeTw?si=Z2O_3jPcZ5r-j6zC}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
-    <div class="dcard2"><span class="tag">12/55</span>
-        <div class="fpart2"><img th:src="@{/Images/courses/digital.jpg}" />
-            <iframe th:src="@{https://www.youtube.com/embed/QfSIj5pmeTw?si=Z2O_3jPcZ5r-j6zC}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
-    <div class="dcard2"><span class="tag">13/55</span>
-        <div class="fpart2"><img th:src="@{/Images/courses/digital.jpg}" />
-            <iframe th:src="@{https://www.youtube.com/embed/QfSIj5pmeTw?si=Z2O_3jPcZ5r-j6zC}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
-    <div class="dcard2"><span class="tag">14/55</span>
-        <div class="fpart2"><img th:src="@{/Images/courses/digital.jpg}" />
-            <iframe th:src="@{https://www.youtube.com/embed/QfSIj5pmeTw?si=It seems that this video doesn't have a transcript. I recommend trying another video.It seems that this video doesn't have a transcript. I recommend trying another video.It seems that this video doesn't have a transcript. I recommend trying another video.urses/data.png}" class="icon" />Data Structures</a></li>
-            <li><a th:href="@{/Module/jee}"<img th:src="@{/images/courses/algo.png}" class="icon" />Algorithm</a></li>
-            <li><a th:href="@{/templates/subjects/computer_courses.html#projects}"><img th:src="@{/Images/courses/projects.png}" class="icon" />Projects</a></li>
+            <li><a th:href="@{/Module/jee}"><img th:src="@{/Images/courses/d1.png}" class="icon">JEE</a></li>
+            <li><a th:href="@{/Module/gate}"><img th:src="@{/Images/courses/paper.png}" class="icon">GATE</a></li>
+            <li><a th:href="@{/computer_courses}"><img th:src="@{/Images/courses/computer.png}" class="icon">Computer Courses</a></li>
+            <li><a th:href="@{/computer_courses.html#data}"><img th:src="@{/Images/courses/data.png}" class="icon">Data Structures</a></li>
+            <li><a th:href="@{/computer_courses.html#algo}"><img th:src="@{/Images/courses/algo.png}" class="icon">Algorithm</a></li>
+            <li><a th:href="@{/computer_courses.html#projects}"><img th:src="@{/Images/courses/projects.png}" class="icon">Projects</a></li>
         </ul>
-
         <div class="search" id="search-switch">
-            <input type="search" placeholder="Search" class="srch">
-            <button id="srchbtn">
-                <img th:src="@{/Images/icon/search.png}">
-            </button>
+            <input type="text" placeholder="Search" class="srch">
+            <button id="srchbtn"><img th:src="@{/Images/icon/search.png}"></button>
         </div>
-
     </div>
-
 </header>
 
-
-<!-- MAIN Heading of Page -->
 <div class="title">
-    <span>Computer Science Courses<br>on LearnEd</span>
+    <span th:text="${title}">Prepare for JEE Mains & Advanced on LearnEd</span>
     <div class="shortdesc">
-        <p>Learn programming languages and concepts to prepare for a career in<br>hardware or software development</p>
+        <p th:text="${description}">Learn your basic concepts to prepare for a career in Engineering and Medical fields</p>
     </div>
 </div>
 
+<!-- Quick Links -->
 <div class="course">
     <div class="cbox">
-        <div class="det"><a th:href="@{/java}">Java</a></div>
-        <div class="det"><a href="https://developer.android.com/">Android Development</a></div>
-        <div class="det"><a href="https://docs.oracle.com/javafx/2/get_started/fxml_tutorial.htm">FXML</a></div>
-        <div class="det"><a th:href="@{/cplusplus}">C++</a></div>
-        <div class="det"><a href="https://www.geeksforgeeks.org/introduction-of-compiler-design/">Compiler Designing</a></div>
-        <div class="det"><a href="https://www.coursera.org/specializations/game-design-and-development">Game Development</a></div>
-        <div class="det"><a th:href="@{/algo}">Algorithm</a></div>
+        <div class="det"><a th:href="@{/#organic}">Organic Chemistry</a></div>
+        <div class="det"><a th:href="@{/#inorganic}">Inorganic Chemistry</a></div>
+        <div class="det"><a th:href="@{/#physical}">Physical Chemistry</a></div>
+        <div class="det"><a th:href="@{/#physics}">Physics</a></div>
+        <div class="det"><a th:href="@{/#math}">Mathematics</a></div>
+        <div class="det"><a th:href="@{/#sample_papers}">Sample Papers</a></div>
+    </div>
+    <div class="cbox">
+        <div class="det"><a th:href="@{/#organic}">Organic Chemistry</a></div>
+        <div class="det"><a th:href="@{/thermodynamics.html}">Thermodynamics</a></div>
+        <div class="det"><a th:href="@{/#physical}">Physical Chemistry</a></div>
+        <div class="det"><a th:href="@{/#inorganic}">Inorganic Chemistry</a></div>
+        <div class="det"><a th:href="@{/#periodic_table}">Periodic Table</a></div>
+        <div class="det"><a th:href="@{/#equilibrium}">Equilibrium</a></div>
+    </div>
+    <div class="cbox">
+        <div class="det"><a th:href="@{/#math}">Differential Calculus</a></div>
+        <div class="det"><a th:href="@{/#math}">Calculus</a></div>
+        <div class="det"><a th:href="@{/#math}">Algebra</a></div>
+        <div class="det"><a th:href="@{/#math}">Trigonometry</a></div>
+        <div class="det"><a th:href="@{/#math}">Integration</a></div>
+        <div class="det"><a th:href="@{/#math}">Matrices</a></div>
+        <div class="det"><a th:href="@{/#math}">Determinants</a></div>
+        <div class="det"><a th:href="@{/#math}">Differentiation</a></div>
     </div>
 </div>
 
-<div class="cbox">
-    <div class="det"><a th:href="@{/python}">Python</a></div>
-    <div class="det"><a href="https://www.coursera.org/learn/machine-learning">Machine Learning</a></div>
-    <div class="det"><a href="https://en.wikipedia.org/wiki/Artificial_intelligence">Artificial Intelligence</a></div>
-    <div class="det"><a href="https://en.wikipedia.org/wiki/Network">Networking</a></div>
-    <div class="det"><a href="https://www.kaspersky.co.in/resource-center/definitions/what-is-cyber-security">Cyber Security</a></div>
-    <div class="det"><a href="https://www.eccouncil.org/ethical-hacking/">Ethical Hacking</a></div>
-    <div class="det"><a th:href="@{/data}">Data Structures</a></div>
-</div>
-
-<div class="cbox">
-    <div class="det"><a href="#html_css">HTML and CSS</a></div>
-    <div class="det"><a href="https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd0044">Full Stack Web Development</a></div>
-    <div class="det"><a href="https://uxplanet.org/what-is-ui-vs-ux-design-and-the-difference-d9113f6612de?gi=6d9d13f4cc95">UI Designing</a></div>
-    <div class="det"><a href="https://www.adobe.com/in/products/xd.html">Adobe XD</a></div>
-    <div class="det"><a href="https://www.sciencedirect.com/topics/computer-science/hardware-design">Hardware Designing</a></div>
-    <div class="det"><a href="#javascript">JavaScript</a></div>
-    <div class="det"><a th:href="@{/html_css}">Bootstrap</a></div>
-</div>
-
-
-
-<!-- Courses Available -->
 <div class="inbt">
-    Accelerate your career with Computer Science programs
+    Accelerate your career with JEE Main & Advanced programs
 </div>
 
+<!-- COURSES AVAILABLE -->
 <div class="ccard">
     <center>
         <div class="ccardbox">
             <div class="dcard">
-                <div class="fpart"><img th:src="@{/Images/courses/java-course.jpg}"></div>
-                <a th:href="@{/java}"><div class="spart">2 Courses <img th:src="@{/Images/icon/dropdown.png}"></div></a>
+                <div class="fpart"><img th:src="@{/Images/courses/organic.jpg}"></div>
+                <a th:href="@{/#organic}"><div class="spart">2 Courses <img th:src="@{/Images/icon/dropdown.png}"></div></a>
             </div>
             <div class="dcard">
-                <div class="fpart"><img th:src="@{/Images/courses/python-course.png}"></div>
-                <a th:href="@{/python}"><div class="spart">5 Courses <img th:src="@{/Images/icon/dropdown.png}"></div></a>
+                <div class="fpart"><img th:src="@{/Images/courses/inorganic.jpg}"></div>
+                <a th:href="@{/#inorganic}"><div class="spart">5 Courses <img th:src="@{/Images/icon/dropdown.png}"></div></a>
             </div>
             <div class="dcard">
-                <div class="fpart"><img th:src="@{/Images/courses/c-course.jpg}"></div>
-                <a th:href="@{/cplusplus}"><div class="spart">3 Courses <img th:src="@{/Images/icon/dropdown.png}"></div></a>
+                <div class="fpart"><img th:src="@{/Images/courses/physical.jpg}"></div>
+                <a th:href="@{/#physical}"><div class="spart">3 Courses <img th:src="@{/Images/icon/dropdown.png}"></div></a>
             </div>
         </div>
-
-
-
         <div class="ccardbox">
             <div class="dcard">
-                <div class="fpart"><img th:src="@{/Images/courses/web-course.jpg}"></div>
-                <a th:href="@{/html_css}"><div class="spart">6 Courses <img th:src="@{/Images/icon/dropdown.png}"></div></a>
+                <div class="fpart"><img th:src="@{/Images/courses/physics.jpg}"></div>
+                <a th:href="@{/#physics}"><div class="spart">6 Courses <img th:src="@{/Images/icon/dropdown.png}"></div></a>
             </div>
             <div class="dcard">
-                <div class="fpart"><img th:src="@{/Images/courses/data-course.jpg}"></div>
-                <a th:href="@{/data}"><div class="spart">2 Courses <img th:src="@{/Images/icon/dropdown.png}"></div></a>
+                <div class="fpart"><img th:src="@{/Images/courses/math.jpg}"></div>
+                <a th:href="@{/#math}"><div class="spart">2 Courses <img th:src="@{/Images/icon/dropdown.png}"></div></a>
             </div>
             <div class="dcard">
-                <div class="fpart"><img th:src="@{/Images/courses/algo-course.jpg}"></div>
-                <a th:href="@{/algo}"><div class="spart">1 Courses <img th:src="@{/Images/icon/dropdown.png}"></div></a>
+                <div class="fpart"><img th:src="@{/Images/courses/paper-download.png}"></div>
+                <a th:href="@{/#sample_papers}"><div class="spart">1 Courses <img th:src="@{/Images/icon/dropdown.png}"></div></a>
             </div>
         </div>
-
-        <!--
-        s on JAVA Lectures -->
-
+    </center>
+</div>
 
 
-<!-- s on C++ Lectures -->
-        <!-- s on PYTHON Lectures -->
-
-<!-- s on DATA STRUCTURES Lectures -->
-
-
-
-
-<!--
-s on ALGORITHM Lectures -->
-
-
-
-
-<!--
-s on HTML and CSS Lectures -->
-
-
-
-
-    <!--
-    s on JAVASCRIPT Lectures -->
-
-
-
-    <!-- PROJECTS -->
-
-
-<br><br><br><br><br>
 
 <!-- FOOTER -->
 <footer>
     <div class="footer-container">
         <div class="left-col">
-            <img th:src="@{/Images/osop.jpg}" style="width: 200px; border-radius:">
+            <img th:src="@{/Images/osop.jpg}" style="width: 200px;">
             <div class="logo"></div>
             <div class="social-media">
-                <a href="#"><img th:src="@{/Images/icon/fb.png}"></a>
-                <a href="#"><img th:src="@{/Images/icon/insta.png}"></a>
-                <a href="#"><img th:src="@{/Images/icon/tt.png}"></a>
-                <a href="#"><img th:src="@{/Images/icon/ytube.png}"></a>
-                <a href="#"><img th:src="@{/Images/icon/linkedin.png}"></a>
+                <a th:href="@{#}"><img th:src="@{/Images/icon\fb.png}"></a>
+                <a th:href="@{#}"><img th:src="@{/Images/icon\insta.png}"></a>
+                <a th:href="@{#}"><img th:src="@{/Images/icon\tt.png}"></a>
+                <a th:href="@{#}"><img th:src="@{/Images/icon\ytube.png}"></a>
+                <a th:href="@{#}"><img th:src="@{/Images/icon\linkedin.png}"></a>
             </div><br><br>
-            <p class="rights-text" th:text="#{copyright}">Copyright © 2021 Created By Roshan Kumar, Abhishek Dulat All Rights Reserved.</p>
+            <p class="rights-text">Copyright © 2021 Created By Roshan Kumar, Abhishek Dulat All Rights Reserved.</p>
             <br><p><img th:src="@{/Images/icon/location.png}"> Lovely Professional University<br>Phagwara, Punjab-144401</p><br>
-            <p><img th:src="@{/Images/icon/phone.png}"> +91-1234-567-890<br><img th:src="@{../Images/icon/mail.png}">&nbsp; learnedonline9419@gmail.com</p>
+            <p><img th:src="@{/Images/icon/phone.png}"> +91-1234-567-890<br><img th:src="@{/Images/icon/mail.png}">&nbsp; learnedonline9419@gmail.com</p>
         </div>
         <div class="right-col">
-            <h1 style="color: #fff" th:text="#{newsletter}">Our Newsletter</h1>
+            <h1 style="color: #fff">Our Newsletter</h1>
             <div class="border"></div><br>
-            <p th:text="#{newsletter_prompt}">Enter Your Email to get our News and updates.</p>
+            <p>Enter Your Email to get our News and updates.</p>
             <form class="newsletter-form">
                 <input class="txtb" type="email" placeholder="Enter Your Email">
                 <input class="btn" type="submit" value="Submit">
@@ -212,5 +137,6 @@ s on HTML and CSS Lectures -->
         </div>
     </div>
 </footer>
+
 </body>
 </html>

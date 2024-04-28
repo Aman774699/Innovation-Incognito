@@ -40,17 +40,16 @@
                 <li><a class="get-started" th:href="@{/user/profile}">Profile</a></li>
             </ul>
         </div>
-<!--        <a class="get-started" th:href="@{/user/login}">Login</a>-->
-<!--        <a class="get-started" th:href="@{/user/login}">Profile</a>-->
+
         <img th:src="@{/Images/icon/menu.png}" class="menu" onclick="sideMenu(0)" alt="menu">
     </nav>
 
     <div class="head-container">
         <div class="quote">
-            <p th:text="|The beautiful thing about learning is that nobody can take it away from you|">The beautiful thing about learning is that nobody can take it away from you</p>
-            <h5 th:text="|Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research!|">Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research!</h5>
+            <p th:text="|Discover the enduring beauty of learning - it's a treasure that stays with you forever.|">The beautiful thing about learning is that nobody can take it away from you</p>
+            <h5 th:text="|Education unfolds the journey of learning, fostering the acquisition of knowledge, skills, values, beliefs, and habits. Through varied methods like teaching, training, storytelling, discussion, and directed research, it illuminates the path of discovery.|">Education unfolds the journey of learning, fostering the acquisition of knowledge, skills, values, beliefs, and habits. Through varied methods like teaching, training, storytelling, discussion, and directed research, it illuminates the path of discovery.</h5>
             <div class="play">
-                <img th:src="@{/Images/icon/play.png}" alt="play"><span><a href="https://www.youtube.com/watch?v=KFyrgDO1WXk" target="_blank">Watch Now</a></span>
+                <img th:src="@{/Images/icon/play.png}" alt="play"><span><a href="https://www.youtube.com/embed/1ZM2qimDNhY?si=M4OSX9hwW_-eKTKA" target="_blank">Watch Now</a></span>
             </div>
         </div>
         <div class="svg-image">
@@ -71,7 +70,7 @@
 
 <!-- Some Popular Subjects -->
 <div class="title" id="course_section">
-    <span th:text="|Popular Subjects on Osop|">Popular Subjects on Osop</span>
+    <span th:text="|Popular Subjects on OSOP|">Popular Subjects on OSOP</span>
 </div>
 <br><br>
 <div class="course">
@@ -79,14 +78,12 @@
         <div class="cbox">
             <div class="det"><a th:href="@{/Module/jee}"><img th:src="@{/Images/courses/book.png}" alt="Book">JEE Preparation</a></div>
             <div class="det"><a th:href="@{/Module/gate}"><img th:src="@{/Images/courses/d1.png}" alt="D1">GATE Preparation</a></div>
-            <div class="det"><a th:href="@{/subjects/jee#sample_papers}"><img th:src="@{/Images/courses/paper.png}" alt="Paper">Sample Papers</a></div>
             <div class="det"><a th:href="@{/Module/quiz}"><img th:src="@{/Images/courses/d1.png}" alt="D1">Daily Quiz</a></div>
         </div>
         <div class="cbox">
             <div class="det"><a th:href="@{/Module/computer_Courses}"><img th:src="@{/Images/courses/computer.png}" alt="Computer">Computer Courses</a></div>
             <div class="det"><a th:href="@{/Module/datastructure}"><img th:src="@{/Images/courses/data.png}" alt="Data">Data Structures</a></div>
-            <div class="det"><a th:href="@{/Module/jee}"><img th:src="@{/Images/courses/algo.png}" alt="Algo">Algorithm</a></div>
-            <div class="det det-last"><a th:href="@{/Module/quiz}"><img th:src="@{/Images/courses/projects.png}" alt="Projects">Projects</a></div>
+            <div class="det"><a th:href="@{/Module/algorithms}"><img th:src="@{/Images/courses/algo.png}" alt="Algo">Algorithm</a></div>
         </div>
     </center>
 </div>
@@ -101,7 +98,14 @@
         </div>
         <div class="side-text">
             <h2 th:text="|What do you think about us?|">What do you think about us?</h2>
-            <p th:text="|Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research! Education is the passport to the future, for tomorrow belongs to those who prepare for it today. Your attitude, not your aptitude, will determine your altitude. If you think education is expensive, try ignorance. The only person who is educated is the one who has learned how to learn …and change.|">Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion, and directed research! Education is the passport to the future, for tomorrow belongs to those who prepare for it today. Your attitude, not your aptitude, will determine your altitude. If you think education is expensive, try ignorance. The only person who is educated is the one who has learned how to learn …and change.</p>
+            <p th:text="|Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and
+            habits. Educational methods include teaching, training, storytelling, discussion and
+            directed research! Education is the passport to the future, for tomorrow belongs to those who prepare for it today. Your attitude, not
+            your aptitude, will determine your altitude. If you think education is expensive, try ignorance. The only person who is educated is the
+            one who has learned how to learn …and change.|">Education is the process of facilitating learning, or the acquisition of knowledge, skills, values,
+                beliefs, and habits. Educational methods include teaching, training, storytelling, discussion, and directed research! Education is the passport
+                to the future, for tomorrow belongs to those who prepare for it today. Your attitude, not your aptitude, will determine your altitude. If you think
+                education is expensive, try ignorance. The only person who is educated is the one who has learned how to learn …and change.</p>
         </div>
     </div>
 </div>
@@ -111,14 +115,13 @@
     <div class="diffSection" id="services_section">
         <center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">Services</p></center>
     </div>
-    <a th:href="@{computer_courses.html}"><div class="s-card"><img th:src="@{/Images/icon/computer-courses.png}"><p>Free Online Computer Courses</p></div></a>
+    <a th:href="@{/Module/computer_Courses}"><div class="s-card"><img th:src="@{/Images/icon/computer-courses.png}"><p>Free Online Computer Courses</p></div></a>
 
-    <a th:href="@{/subjects/jee}"><div class="s-card"><img th:src="@{/Images/icon/brainbooster.png}"><p>Building Concepts for Competitive Exams</p></div></a>
-    <a href="#"><div class="s-card"><img th:src="@{/Images/icon/online-tutorials.png}"><p>Online Video Lectures</p></div></a>
-    <a th:href="@{/subjects/jee.html#sample_papers}"><div class="s-card"><img th:src="@{/Images/icon/papers.jpg}"><p>Sample Papers of Various Competitive Exams</p></div></a>
-    <a href="#"><div class="s-card"><img th:src="@{/Images/icon/p3.png}"><p>Performance and Ranking Report</p></div></a>
-    <a href="https://www.blackbox.ai/agent/OSOPCODINGLNkBPn2"><div class="s-card"><img th:src="@{/Images/icon/discussion.png}"><p>Discussion with Our chatBoat</p></div></a>
-    <a th:href="@{/subjects/quiz}"><div class="s-card"><img th:src="@{/Images/icon/q1.png}"><p>Daily Brain Teasing Questions to Improve IQ</p></div></a>
+    <a th:href="@{/Module/gate}"><div class="s-card"><img th:src="@{/Images/icon/brainbooster.png}"><p>Building Concepts for Competitive Exams</p></div></a>
+    <a th:href="@{/Module/algorithms}"><div class="s-card"><img th:src="@{/Images/icon/online-tutorials.png}"><p>Online Video Lectures</p></div></a>
+    <a th:href="@{/Module/samples}"><div class="s-card"><img th:src="@{/Images/icon/papers.jpg}"><p>Sample Papers of Various Competitive Exams</p></div></a>
+    <a href="https://www.blackbox.ai/agent/OSOPCODINGLNkBPn2" target="_blank"><div class="s-card"><img th:src="@{/Images/icon/discussion.png}"><p>Discussion with Our chatBoat</p></div></a>
+    <a th:href="@{/Module/quiz}"><div class="s-card"><img th:src="@{/Images/icon/q1.png}"><p>Daily Brain Teasing Questions to Improve IQ</p></div></a>
     <a th:href="@{'#contactus_section'}"><div class="s-card"><img th:src="@{/Images/icon/help.png}"><p>24x7 Online Support</p></div></a>
 </div>
 
@@ -128,25 +131,23 @@
     <div class="csec"></div>
     <div class="back-contact">
         <div class="cc">
-            <form action="mailto:roshank9419@gmail.com" method="post" enctype="text/plain">
+            <form th:action="@{/user/message}" method="post" enctype="text/plain">
                 <label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name <span class="imp">*</span></label><br>
                 <center>
                     <input type="text" name="fname" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
                 </center>
                 <label>Email <span class="imp">*</span></label><br>
-                <input type="email" name="mail" style="width: 100%" required="required"><br>
+                <input type="email" name="email" style="width: 100%" required="required"><br>
                 <label>Subject <span class="imp">*</span></label><br>
-                <input type="text" name="message" style="width: 100%" required="required"><br>
+                <input type="text" name="subject" style="width: 100%" required="required"><br>
                 <label>Message</label><br>
-                <textarea name="additional"></textarea><br>
+                <textarea name="message"></textarea><br>
                 <button type="submit" id="csubmit">Send Message</button>
             </form>
         </div>
     </div>
 </div>
 
-Footer
- FOOTER
 <footer>
     <div class="footer-container">
         <div class="left-col">
@@ -160,8 +161,8 @@ Footer
                 <a href="#"><img th:src="@{/Images/icon/linkedin.png}"></a>
             </div><br><br>
             <p class="rights-text">Copyright © 2024 Created By Aman Vishwakarma, Anushka Sharma, Bhushan Kawadkar, DIvyansh Dixit and Divyanshi Neema.</p>
-            <br><p><img src="Images/icon/location.png"> Chameli Devi Group of Institution<br>Indore, madhya Pradesh</p><br>
-            <p><img src="Images/icon/phone.png"> 0731-4243600<br><img src="Images/icon/mail.png">&nbsp; osop1234@gmail.com</p>
+            <br><p><img th:src="@{/Images/icon/location.png}"> Chameli Devi Group of Institution<br>Indore, madhya Pradesh</p><br>
+            <p><img th:src="@{/Images/icon/phone.png}">9589276762<br><img th:src="@{/Images/icon/mail.png}">&nbsp; osopcoding@gmail.com</p>
         </div>
         <div class="right-col">
             <h1 style="color: #fff">Our Newsletter</h1>
