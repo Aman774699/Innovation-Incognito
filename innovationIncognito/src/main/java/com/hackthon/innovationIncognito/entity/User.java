@@ -18,8 +18,6 @@ public class User {
     @NotBlank
     private String conformPassword;
     @NotBlank
-    private String firstName;
-    @NotBlank
     @Column(unique = true)
     private String email;
     @Column(length = 10)
@@ -59,13 +57,6 @@ public class User {
         this.conformPassword = conformPassword;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
 
     public String getEmail() {
         return email;
@@ -88,7 +79,6 @@ public class User {
         this.userName = userName;
         this.password = password;
         this.conformPassword = conformPassword;
-        this.firstName = firstName;
         this.email = email;
         this.phoneNumber = phoneNumber;
     }

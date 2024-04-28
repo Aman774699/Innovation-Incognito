@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="shortcut icon" type="png" th:href="@{/Images/icon/favicon.png}">
+    <title>Prepare for GATE on LearnEd</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/subjects.css}">
+    <script type="text/javascript" th:src="@{/js/script.js}"></script>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header>
+    <div class="nav" id="nav">
+        <div id="learned-logo">
+            <a th:href="@{/templates/index.html}"><img src="/Images/icon/logo.png" style="width: 120px;"></a>
+        </div>
+        <div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img src="../images/icon/menu.png"></div>
+        <ul id="list-switch">
+            <li><a th:href="@{/templates/subjects/jee.html}"><img th:src="@{/Images/courses/d1.png}" class="icon" /></a>JEE</li>
+            <li><a href="#"><img th:src="@{/Images/courses/paper.png}" class="icon" />GATE</a></li>
+            <li><a th:href="@{/templates/subjects/computer_courses.html}"><img th:src="@{/Images/courses/computer.png}" class="icon" />Computer Courses</a></li>
+            <li><a th:href="@{/templates/subjects/computer_courses.html#data}"><img th:src="@{/Images/courses/data.png}" class="icon" />Data Structures</a></li>
+            <li><a th:href="@{/templates/subjects/computer_courses.html#algo}"><img th:src="@{/images/courses/algo.png}" class="icon" />Algorithm</a></li>
+            <li><a th:href="@{/templates/subjects/computer_courses.html#projects}"><img th:src="@{/Images/courses/projects.png}" class="icon" />Projects</a></li>
+        </ul>
+        <div class="search" id="search-switch">
+            <input type="text" placeholder="Search" class="srch">
+            <button id="srchbtn"><img th:src="@{/Images/icon/search.png}" /></button>
+        </div>
+    </div>
+</header>
+
+<!-- Main Title of the Page -->
+<div class="title">
+    <span>Prepare for GATE Exams on LearnEd</span>
+    <div class="shortdesc">
+        <p>Learn from LearnEd for better higher studies in<br> Indian Institutes of Technologies(IIT)</p>
+    </div>
+</div>
+
+<!-- Some KeyWords related to topic -->
+<div class="course">
+    <div class="cbox">
+        <div class="det"><a th:href="@{/digital}">Digital Logic</a></div>
+        <div class="det"><a th:href="@{https://en.wikipedia.org/wiki/Sequential_logic}" target="_blank">Combinational &amp; Sequential Circuits</a></div>
+        <div class="det" th:href="@{/digital}"></div>
+            <!-- Content here -->
+            <!-- Videos on DIGITAL LOGIC Lectures -->
+            <div class="title2" id="digital">
+                <span>Digital Logic</span>
+                <div class="shortdesc2">
+                    <p>Learn deeply about Digital Logic Circuits...</p>
+                </div>
+            </div>
+            <center>
+                <div class="ccardbox2">
+                    <div class="dcard2"><span class="tag">1/8</span>
+                        <div class="fpart2"><img th:src="@{/Images/courses/digital.jpg}" />
+                            <iframe th:src="@{https://www.youtube.com/embed/-M7oIM8hKSU}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Add more video cards here -->
+
+                    <div class="dcard2"><span class="tag">1/8</span>
+                        <div class="fpart2"><img th:src="@{/Images/courses/digital.jpg}" />
+                            <iframe th:src="@{https://www.youtube.com/embed/-M7oIM8hKSU}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Add more video cards here -->
+
+                    <div class="dcard2"><span class="tag">1/8</span>
+                        <div class="fpart2"><img th:src="@{/Images/courses/digital.jpg}" />
+                            <iframe th:src="@{https://www.youtube.com/embed/-M7oIM8hKSU}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Add more video cards here -->
+
+                    <div class="dcard2"><span class="tag">1/8</span>
+                        <div class="fpart2"><img th:src="@{/Images/courses/digital.jpg}" />
+                            <iframe th:src="@{https://www.youtube.com/embed/-M7oIM8hKSU}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Add more video cards here -->
+                </div>
+
+            </center>
+        </div>
+    </div>
+            <br><br>
+            <div class="click-me">
+                <a th:href="@{https://youtu.be/-M7oIM8hKSU}" target="_blank">Click Here to Watch full playlist</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Videos on COMPUTER ORGANIZATION and ARCHITECTURE Lectures -->
+
+        <div class="title2" id="coaa">
+            <span>Computer Organization and Architecture</span>
+            <div class="shortdesc2">
+                <p>Build your concepts strong easily with our great tutors...</p>
+            </div>
+        </div>
+        <center>
+            <div class="ccardbox2">
+                <div class="dcard2"><span class="tag">1/8</span>
+                    <div class="fpart2"><img th:src="@{/Images/courses/coaa.jpg}">
+                        <iframe th:src="@{https://www.youtube.com/embed/q6oiRtKTpX4}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- Add more video cards here -->
+
+                <div class="dcard2"><span class="tag">1/8</span>
+                    <div class="fpart2"><img th:src="@{/Images/courses/coaa.jpg}">
+                        <iframe th:src="@{https://www.youtube.com/embed/q6oiRtKTpX4}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- Add more video cards here -->
+
+                <div class="dcard2"><span class="tag">1/8</span>
+                    <div class="fpart2"><img th:src="@{/Images/courses/coaa.jpg}">
+                        <iframe th:src="@{https://www.youtube.com/embed/q6oiRtKTpX4}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- Add more video cards here -->
+
+                <div class="dcard2"><span class="tag">1/8</span>
+                    <div class="fpart2"><img th:src="@{/Images/courses/coaa.jpg}">
+                        <iframe th:src="@{https://www.youtube.com/embed/q6oiRtKTpX4}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- Add more video cards here -->
+            </div>
+        </center>
+        <br><br>
+        <div class="click-me">
+            <a th:href="@{https://youtu.be/q6oiRtKTpX4}" target="_blank">Click Here to Watch full playlist</a>
+        </div>
+
+
+        <!-- Videos on COMPILER Lectures -->
+
+        <div class="title2" id="compiler">
+            <span>Compiler Design</span>
+            <div class="shortdesc2">
+                <p>Build your concepts strong easily with our great tutors...</p>
+            </div>
+        </div>
+        <center>
+            <div class="ccardbox2">
+                <div class="dcard2"><span class="tag">1/8</span>
+                    <div class="fpart2"><img th:src="@{/Images/courses/compiler.jpg}">
+                        <iframe th:src="@{https://www.youtube.com/embed/yNZIhF6pxjM}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="dcard2"><span class="tag">1/8</span>
+                    <div class="fpart2"><img th:src="@{/Images/courses/compiler.jpg}">
+                        <iframe th:src="@{https://www.youtube.com/embed/yNZIhF6pxjM}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="dcard2"><span class="tag">1/8</span>
+                    <div class="fpart2"><img th:src="@{/Images/courses/compiler.jpg}">
+                        <iframe th:src="@{https://www.youtube.com/embed/yNZIhF6pxjM}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="dcard2"><span class="tag">1/8</span>
+                    <div class="fpart2"><img th:src="@{/Images/courses/compiler.jpg}">
+                        <iframe th:src="@{https://www.youtube.com/embed/yNZIhF6pxjM}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </center>
+        <br><br>
+        <div class="click-me">
+            <a th:href="@{https://youtu.be/yNZIhF6pxjM}" target="_blank">Click Here to Watch full playlist</a>
+        </div>
+
+        <!-- Videos on OPERATING SYSTEM Lectures -->
+
+
+        <div class="title2" id="os">
+            <span>Operating System</span>
+            <div class="shortdesc2">
+                <p>Build your concepts strong easily with our great tutors...</p>
+            </div>
+        </div>
+        <center>
+            <div class="ccardbox2">
+                <div class="dcard2"><span class="tag" ></span>
+                    <div class="fpart2"><img th:src="@{/Images/courses/os.jpg}">
+                        <iframe th:src="@{https://www.youtube.com/embed/vBURTt97EkA}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- Add more video cards here -->
+
+
+                <div class="dcard2"><span class="tag" ></span>
+                    <div class="fpart2"><img th:src="@{/Images/courses/os.jpg}">
+                        <iframe th:src="@{https://www.youtube.com/embed/vBURTt97EkA}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- Add more video cards here -->
+
+                <div class="dcard2"><span class="tag" ></span>
+                    <div class="fpart2"><img th:src="@{/Images/courses/os.jpg}">
+                        <iframe th:src="@{https://www.youtube.com/embed/vBURTt97EkA}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- Add more video cards here -->
+
+                <div class="dcard2"><span class="tag"></span>
+                    <div class="fpart2"><img th:src="@{/Images/courses/os.jpg}">
+                        <iframe th:src="@{https://www.youtube.com/embed/vBURTt97EkA}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- Add more video cards here -->
+            </div>
+        </center>
+        <br><br>
+        <div class="click-me">
+            <a th:href="@{https://youtu.be/vBURTt97EkA}" target="_blank">Click Here to Watch full playlist</a>
+        </div>
+
+<!-- Videos on DATABASE Lectures -->
+
+        <div class="title2" id="database">
+            <span>Databases</span>
+            <div class="shortdesc2">
+                <p>Build your concepts strong easily with our great tutors...</p>
+            </div>
+        </div>
+        <center>
+            <div class="ccardbox2">
+                <div class="dcard2"><span class="tag">1/8</span>
+                    <div class="fpart2"><img th:src="@{/images/courses/database.jpg}">
+                        <iframe th:src="@{https://www.youtube.com/embed/wR0jg0eQsZA}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="dcard2"><span class="tag">2/8</span>
+                    <div class="fpart2"><img th:src="@{/Images/courses/database.jpg}">
+                        <iframe th:src="@{https://www.youtube.com/embed/wR0jg0eQsZA}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                    <div class="dcard2"><span class="tag">1/8</span>
+                        <div class="fpart2"><img th:src="@{/images/courses/database.jpg}">
+                            <iframe th:src="@{https://www.youtube.com/embed/wR0jg0eQsZA}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="dcard2"><span class="tag">2/8</span>
+                        <div class="fpart2"><img th:src="@{/Images/courses/database.jpg}">
+                            <iframe th:src="@{https://www.youtube.com/embed/wR0jg0eQsZA}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+            </div>
+        </center>
+        <br><br>
+        <div class="click-me">
+            <a th:href="@{https://youtu.be/wR0jg0eQsZA}" target="_blank">Click Here to Watch full playlist</a>
+        </div>
+
+        <!-- Videos on COMPUTER NETWORKS Lectures -->
+
+        <div class="title2" id="cn">
+            <span>Computer Networks</span>
+            <div class="shortdesc2">
+                <p>Build your concepts strong easily with our great tutors...</p>
+            </div>
+        </div>
+        <center>
+            <div class="ccardbox2">
+                <div class="dcard2"><span class="tag">1/8</span>
+                    <div class="fpart2"><img th:src="@{/Images/courses/cn.jpg}">
+                        <iframe th:src="@{https://www.youtube.com/embed/qiQR5rTSshw}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="dcard2"><span class="tag">2/8</span>
+                    <div class="fpart2"><img th:src="@{/Images/courses/cn.jpg}">
+                        <iframe th:src="@{https://www.youtube.com/embed/qiQR5rTSshw}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="dcard2"><span class="tag">2/8</span>
+                    <div class="fpart2"><img th:src="@{/Images/courses/cn.jpg}">
+                        <iframe th:src="@{https://www.youtube.com/embed/qiQR5rTSshw}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="dcard2"><span class="tag">2/8</span>
+                    <div class="fpart2"><img th:src="@{/Images/courses/cn.jpg}">
+                        <iframe th:src="@{https://www.youtube.com/embed/qiQR5rTSshw}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </center>
+        <br><br>
+        <div class="click-me">
+            <a th:href="@{https://youtu.be/qiQR5rTSshw}" target="_blank">Click Here to Watch full playlist</a>
+        </div>
+
+
+        <!-- Links for SAMPLE PAPERS of JEE MAINS & ADVANCED -->
+
+        <div class="title2" id="sample_papers">
+            <span>Sample Papers 2014-19</span>
+            <div class="shortdesc2">
+                <p>Practice more and more question papers</p>
+            </div>
+        </div>
+
+        <div class="sample">
+            <ul>
+                <li><a th:href="@{/samplePapers/p1.pdf}" target="_blank">Sample Paper 2014 Set-A</a></li>
+                <li><a th:href="@{/samplePapers/p1.pdf}" target="_blank">Sample Paper 2014 Set-B</a></li>
+                <li><a th:href="@{/samplePapers/p1.pdf}" target="_blank">Sample Paper 2014 Set-C</a></li>
+            </ul>
+            <ul>
+                <li><a th:href="@{/samplePapers/p1.pdf}" target="_blank">Sample Paper 2015 Set-A</a></li>
+                <li><a th:href="@{/samplePapers/p1.pdf}" target="_blank">Sample Paper 2015 Set-B</a></li>
+                <li><a th:href="@{/samplePapers/p1.pdf}" target="_blank">Sample Paper 2015 Set-C</a></li>
+            </ul>
+            <ul>
+                <li><a th:href="@{/samplePapers/p1.pdf}" target="_blank">Sample Paper 2016 Set-A</a></li>
+                <li><a th:href="@{/samplePapers/p1.pdf}" target="_blank">Sample Paper 2016 Set-B</a></li>
+                <li><a th:href="@{/samplePapers/p1.pdf}" target="_blank">Sample Paper 2016 Set-C</a></li>
+            </ul>
+        </div>
+
+        <div class="sample lastSample">
+            <ul>
+                <li><a th:href="@{/samplePapers/p1.pdf}" target="_blank">Sample Paper 2017 Set-A</a></li>
+                <li><a th:href="@{/samplePapers/p1.pdf}" target="_blank">Sample Paper 2017 Set-B</a></li>
+                <li><a th:href="@{/samplePapers/p1.pdf}" target="_blank">Sample Paper 2017 Set-C</a></li>
+            </ul>
+            <ul>
+                <li><a th:href="@{/samplePapers/p1.pdf}" target="_blank">Sample Paper 2018 Set-A</a></li>
+                <li><a th:href="@{/samplePapers/p1.pdf}" target="_blank">Sample Paper 2018 Set-B</a></li>
+                <li><a th:href="@{/samplePapers/p1.pdf}" target="_blank">Sample Paper 2018 Set-C</a></li>
+            </ul>
+            <ul>
+                <li><a th:href="@{/samplePapers/p1.pdf}" target="_blank">Sample Paper 2019 Set-A</a></li>
+                <li><a th:href="@{/samplePapers/p1.pdf}" target="_blank">Sample Paper 2019 Set-B</a></li>
+                <li><a th:href="@{/samplePapers/p1.pdf}" target="_blank">Sample Paper 2019 Set-C</a></li>
+            </ul>
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-container">
+                <div class="left-col">
+                    <img th:src="@{/images/icon/logo - Copy.png}" style="width: 200px;">
+                    <div class="logo"></div>
+                    <div class="social-media">
+                        <a href="#"><img th:src="@{/images/icon/fb.png}"></a>
+                        <a href="#"><img th:src="@{/images/icon/insta.png}"></a>
+                        <a href="#"><img th:src="@{/images/icon/tt.png}"></a>
+                        <a href="#"><img th:src="@{/images/icon/ytube.png}"></a>
+                        <a href="#"><img th:src="@{/images/icon/linkedin.png}"></a>
+                    </div><br><br>
+                    <p class="rights-text">Copyright © 2021 Created By Roshan Kumar, Abhishek Dulat All Rights Reserved.</p>
+                    <br><p><img th:src="@{/images/icon/location.png}"> Lovely Professional University<br>Phagwara, Punjab-144401</p><br>
+                    <p><img th:src="@{/images/icon/phone.png}"> +91-1234-567-890<br><img th:src="@{/images/icon/mail.png}">&nbsp; learnedonline9419@gmail.com</p>
+                </div>
+                <div class="right-col">
+                    <h1 style="color: #fff">Our Newsletter</h1>
+                    <div class="border"></div><br>
+                    <p>Enter Your Email to get our News and updates.</p>
+                    <form class="newsletter-form">
+                        <input class="txtb" type="email" placeholder="Enter Your Email">
+                        <input class="btn" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+
+
+
+        </footer>
+    </div>
+    </div>
+</body>
+</html>
+
+<!--done this page in thmeleaf -->

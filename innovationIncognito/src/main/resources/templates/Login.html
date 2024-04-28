@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="shortcut icon" type="image/png" th:href="@{/Images/icon/favicon.png}">
+    <title>Login SignUp</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/loginStyle.css}">
+    <script th:src="@{https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js}"></script>
+    <script>
+        $(document).ready(function(){
+            $("form").submit(function(){
+                alert("Great Job !");
+            });
+        });
+    </script>
+
+</head>
+<body>
+<div class="form-box">
+    <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" id="log" onclick="login()" style="color: #fff;">Log In</button>
+        <button type="button" class="toggle-btn" id="reg" onclick="register()">Register</button>
+    </div>
+    <div class="social-icons">
+        <img th:src="@{/Images/icon/fb2.png}">
+        <img th:src="@{/Images/icon/insta2.png}">
+        <img th:src="@{/Images/icon/tt2.png}">
+    </div>
+
+    <!-- Login Form -->
+    <form id="login" class="input-group" th:action="@{/user/proces}" method="post" th:object="${user}">
+        <div class="inp">
+            <img th:src="@{/Images/icon/user.png}"><input type="text" id="email"  name="email" class="input-field" placeholder="User Email" style="width: 88%; border:none;" required="required">
+        </div>
+        <div class="inp">
+            <img th:src="@{/Images/icon/password.png}"><input type="password" id="password" name="password" class="input-field" placeholder=" User Password" style="width: 88%; border: none;" required="required">
+        </div>
+        <input type="checkbox" class="check-box">Remember Password
+        <button type="submit" class="submit-btn">Log In</button>
+    </form>
+
+    <div class="other" id="other">
+        <div class="instead">
+            <h3>or</h3>
+        </div>
+        <button class="connect" onclick="google()">
+            <img th:src="@{/Images/icon/google.png}"><span>Sign in with Google</span>
+        </button>
+    </div>
+
+    <!-- Registration Form -->
+    <form id="register" th:action="@{/user/Signup}" method="post" th:object="${user}" class="input-group">
+        <input type="text" class="input-field" name="userName" placeholder="Full Name" required="required">
+        <input type="email" class="input-field" name="email" placeholder="Email Address" required="required">
+        <input type="password" class="input-field" name="password" placeholder="Create Password" required="required">
+        <input type="password" class="input-field" placeholder="Confirm Password" name="conformPassword" required="required">
+        <input type="checkbox" class="check-box" id="chkAgree" onclick="goFurther()">I agree to the Terms & Conditions
+        <button type="submit" id="btnSubmit" class="submit-btn reg-btn">Register</button>
+    </form>
+</div>
+<script type="text/javascript" th:src="@{/js/script.js}"></script>
+</body>
+</html>

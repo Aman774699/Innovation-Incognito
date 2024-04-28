@@ -10,61 +10,64 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 @RequestMapping("/user")
 public class UserContoller {
-    public boolean b=false;
+    public boolean b = false;
     public User userLogin;
 
-@Autowired
-    UserRepositary userRepositary;
-@GetMapping("/Login")
-    public String Login()
-{
-    return"Login";
-}
-@GetMapping("/Signup")
-    public String Signup()
-{
-    return"Signup";
+    @Autowired
+    private UserRepositary userRepositary;
 
-}
-@PostMapping("/proces")
-    @ResponseBody
-    public String fromValidation(@ModelAttribute("User") User user , Model model){
-    String email=user.getEmail();
-    String password=user.getPassword();
-    User userValid= userRepositary.getUserByEmailAndPassword(email,password);
-    if(userValid== null)
-    {
+    @GetMapping("/login")
+    public String Login() {
         return "Login";
+    }
 
+    @PostMapping("/Signup")
+    public String Signup(@ModelAttribute("user") User user) {
+        if (user == null) {
+            System.out.println("The User is null");
+        }
+        userRepositary.save(user);
+        return "Login";
     }
-    userLogin=userValid;
-model.addAttribute("user",userLogin);
-b=true;
-return"Home";
-}
-@PostMapping("/profile")
-        @ResponseBody
-    public String UserProfile(Model model)
-{
-    if(b==false){
-        return"Login";
+
+    @PostMapping("/proces")
+    public String fromValidation(@ModelAttribute("User") User user, Model model) {
+        String email = user.getEmail();
+        String password = user.getPassword();
+        User userValid = userRepositary.getUserByEmailAndPassword(email, password);
+        if (userValid == null) {
+            return "login";
+
+        }
+        userLogin = userValid;
+        model.addAttribute("user", userLogin);
+        b = true;
+        return "index";
     }
-    model.addAttribute("user",userLogin);
-    return"ProfileView";
-}
-@GetMapping("/logout")
-    public String Logout()
-{
-    b=false;
-  userLogin=null;
-    return"Login";
-}
-@PostMapping("/updateProfile")
+
+    @PostMapping("/profile")
+    @ResponseBody
+    public String UserProfile(Model model) {
+        if (b == false) {
+            return "login";
+        }
+        model.addAttribute("user", userLogin);
+        return "ProfileView";
+    }
+
+    @GetMapping("/logout")
+    public String Logout() {
+        b = false;
+        userLogin = null;
+        return "Login";
+    }
+
+    @PostMapping("/updateProfile")
     @ResponseBody
     public String UpdateProfile(@ModelAttribute("User") User user, Model model) {
-    if (b == false) {
-        return "Login";
+        if (b == false) {
+            return "login";
+        }
+        return "home";
     }
-    return "home";
-}
 }
