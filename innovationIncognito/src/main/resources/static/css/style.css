@@ -100,6 +100,7 @@ nav ul li a:hover {
     width: 120px;
     cursor: pointer;
     transition: all 1s;
+    border-radius: 60px;
 }
 
 a, button {

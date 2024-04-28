@@ -26,18 +26,18 @@
 <!-- Navigation Bar -->
 <header id="header">
     <nav>
-        <div class="logo"><img th:src="@{/Images/icon/logo.png}" alt="logo"></div>
+        <div class="logo"><img th:src="@{/Images/osop.jpg}" alt="logo"></div>
         <ul>
             <li><a class="active" th:href="@{/}">Home</a></li>
             <li><a th:href="@{#course_section}">Subjects</a></li>
-            <li><a th:href="@{/user/login}">Services</a></li>
-            <li><a th:href="@{/user/login}">Contact</a></li>
+            <li><a th:href="@{#services_section}">Services</a></li>
+            <li><a th:href="@{#contactus_section}">Contact</a></li>
         </ul>
         <div class="srch"><input type="text" class="search" placeholder="Search here..."><img th:src="@{/Images/icon/search.png}" alt="search" onclick="slide()"></div>
         <div class="right-btns">
             <ul>
                 <li><a class="get-started" th:href="@{/user/login}">Login</a></li>
-                <li><a class="get-started" th:href="@{/user/login}">Profile</a></li>
+                <li><a class="get-started" th:href="@{/user/profile}">Profile</a></li>
             </ul>
         </div>
 <!--        <a class="get-started" th:href="@{/user/login}">Login</a>-->
@@ -79,12 +79,12 @@
         <div class="cbox">
             <div class="det"><a th:href="@{/Module/jee}"><img th:src="@{/Images/courses/book.png}" alt="Book">JEE Preparation</a></div>
             <div class="det"><a th:href="@{/Module/gate}"><img th:src="@{/Images/courses/d1.png}" alt="D1">GATE Preparation</a></div>
-            <div class="det"><a th:href="@{/subjects/jee.html#sample_papers}"><img th:src="@{/Images/courses/paper.png}" alt="Paper">Sample Papers</a></div>
+            <div class="det"><a th:href="@{/subjects/jee#sample_papers}"><img th:src="@{/Images/courses/paper.png}" alt="Paper">Sample Papers</a></div>
             <div class="det"><a th:href="@{/Module/quiz}"><img th:src="@{/Images/courses/d1.png}" alt="D1">Daily Quiz</a></div>
         </div>
         <div class="cbox">
             <div class="det"><a th:href="@{/Module/computer_Courses}"><img th:src="@{/Images/courses/computer.png}" alt="Computer">Computer Courses</a></div>
-            <div class="det"><a th:href="@{/Module/gate}"><img th:src="@{/Images/courses/data.png}" alt="Data">Data Structures</a></div>
+            <div class="det"><a th:href="@{/Module/datastructure}"><img th:src="@{/Images/courses/data.png}" alt="Data">Data Structures</a></div>
             <div class="det"><a th:href="@{/Module/jee}"><img th:src="@{/Images/courses/algo.png}" alt="Algo">Algorithm</a></div>
             <div class="det det-last"><a th:href="@{/Module/quiz}"><img th:src="@{/Images/courses/projects.png}" alt="Projects">Projects</a></div>
         </div>
@@ -105,26 +105,6 @@
         </div>
     </div>
 </div>
-
-
-<!-- Student Enrolled -->
-<div class="diffSection" id="portfolio_section">
-    <center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px;">Students</p></center>
-    <div class="content">
-        <p th:text="|Education is the passport to the future, for tomorrow belongs to those who prepare for it today. Your attitude, not your aptitude, will determine your altitude. If you think education is expensive, try ignorance. The only person who is educated is the one who has learned how to learn …and change.|">Education is the passport to the future, for tomorrow belongs to those who prepare for it today. Your attitude, not your aptitude, will determine your altitude. If you think education is expensive, try ignorance. The only person who is educated is the one who has learned how to learn …and change.</p>
-    </div>
-</div>
-<div class="extra">
-    <p th:text="|We're increasing this data every year|">We're increasing this data every year</p>
-    <div class="smbox">
-        <span><center><div class="data" th:text="|154|">154</div><div class="det">Enrolled Students</div></center></span>
-        <span><center><div class="data" th:text="|62|">62</div><div class="det">Total Courses</div></center></span>
-        <span><center><div class="data" th:text="|56|">56</div><div class="det">Placed Students</div></center></span>
-        <span><center><div class="data" th:text="|27|">27</div><div class="det">Total Projects</div></center></span>
-    </div>
-</div>
-
-<!-- TEAM -->
 
 <!-- SERVICES -->
 <div class="service-swipe">
@@ -155,9 +135,9 @@
                 </center>
                 <label>Email <span class="imp">*</span></label><br>
                 <input type="email" name="mail" style="width: 100%" required="required"><br>
-                <label>Message <span class="imp">*</span></label><br>
+                <label>Subject <span class="imp">*</span></label><br>
                 <input type="text" name="message" style="width: 100%" required="required"><br>
-                <label>Additional Details</label><br>
+                <label>Message</label><br>
                 <textarea name="additional"></textarea><br>
                 <button type="submit" id="csubmit">Send Message</button>
             </form>
@@ -165,12 +145,12 @@
     </div>
 </div>
 
-<!--Footer-->
-<!-- FOOTER -->
+Footer
+ FOOTER
 <footer>
     <div class="footer-container">
         <div class="left-col">
-            <img th:src="@{/Images/icon/logo - Copy.png}" style="width: 200px;">
+            <img th:src="@{/Images/osop.jpg}" style="width: 200px; margin-top: 10px ; margin-bottom: 10px;">
             <div class="logo"></div>
             <div class="social-media">
                 <a href="#"><img th:src="@{/Images/icon/fb.png}"></a>
@@ -179,9 +159,9 @@
                 <a href="#"><img th:src="@{/Images/icon/ytube.png}"></a>
                 <a href="#"><img th:src="@{/Images/icon/linkedin.png}"></a>
             </div><br><br>
-            <p class="rights-text">Copyright © 2021 Created By Roshan Kumar, Abhishek Dulat All Rights Reserved.</p>
-            <br><p><img src="Images/icon/location.png"> Lovely Professional University<br>Phagwara, Punjab-144401</p><br>
-            <p><img src="Images/icon/phone.png"> +91-1234-567-890<br><img src="Images/icon/mail.png">&nbsp; learnedonline9419@gmail.com</p>
+            <p class="rights-text">Copyright © 2024 Created By Aman Vishwakarma, Anushka Sharma, Bhushan Kawadkar, DIvyansh Dixit and Divyanshi Neema.</p>
+            <br><p><img src="Images/icon/location.png"> Chameli Devi Group of Institution<br>Indore, madhya Pradesh</p><br>
+            <p><img src="Images/icon/phone.png"> 0731-4243600<br><img src="Images/icon/mail.png">&nbsp; osop1234@gmail.com</p>
         </div>
         <div class="right-col">
             <h1 style="color: #fff">Our Newsletter</h1>

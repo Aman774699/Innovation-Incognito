@@ -52,8 +52,7 @@ public class UserContoller {
         return "index";
     }
 
-    @PostMapping("/profile")
-    @ResponseBody
+   @GetMapping("/profile")
     public String UserProfile(Model model) {
         if (b == false) {
             return "login";
@@ -72,7 +71,7 @@ public class UserContoller {
     @PostMapping("/updateProfile")
     @ResponseBody
     public String UpdateProfile(@ModelAttribute("User") User user, Model model) {
-        if (b == false) {
+        if (!b ) {
             return "login";
         }
         return "home";

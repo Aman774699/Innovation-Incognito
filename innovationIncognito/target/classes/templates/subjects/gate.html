@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <link rel="shortcut icon" type="png" th:href="@{/Images/icon/favicon.png}">
-    <title>Prepare for GATE on LearnEd</title>
+    <title>Prepare for GATE on OSOP Coding</title>
     <link rel="stylesheet" type="text/css" th:href="@{/css/subjects.css}">
     <script type="text/javascript" th:src="@{/js/script.js}"></script>
 </head>
@@ -12,15 +12,15 @@
 <header>
     <div class="nav" id="nav">
         <div id="learned-logo">
-            <a th:href="@{/templates/index.html}"><img src="/Images/icon/logo.png" style="width: 120px;"></a>
+            <a th:href="@{/index}"><img src="/Images/osop.jpg" style="width: 120px; border-radius: 70px;"></a>
         </div>
         <div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img src="../images/icon/menu.png"></div>
         <ul id="list-switch">
-            <li><a th:href="@{/templates/subjects/jee.html}"><img th:src="@{/Images/courses/d1.png}" class="icon" /></a>JEE</li>
+            <li><a th:href="@{/Module/jee}"><img th:src="@{/Images/courses/d1.png}" class="icon" /></a>JEE</li>
             <li><a href="#"><img th:src="@{/Images/courses/paper.png}" class="icon" />GATE</a></li>
-            <li><a th:href="@{/templates/subjects/computer_courses.html}"><img th:src="@{/Images/courses/computer.png}" class="icon" />Computer Courses</a></li>
-            <li><a th:href="@{/templates/subjects/computer_courses.html#data}"><img th:src="@{/Images/courses/data.png}" class="icon" />Data Structures</a></li>
-            <li><a th:href="@{/templates/subjects/computer_courses.html#algo}"><img th:src="@{/images/courses/algo.png}" class="icon" />Algorithm</a></li>
+            <li><a th:href="@{/Module/computer_Courses}"><img th:src="@{/Images/courses/computer.png}" class="icon" />Computer Courses</a></li>
+            <li><a th:href="@{/Module/datastructure}"><img th:src="@{/Images/courses/data.png}" class="icon" />Data Structures</a></li>
+            <li><a th:href="@{/Module/jee}"<img th:src="@{/images/courses/algo.png}" class="icon" />Algorithm</a></li>
             <li><a th:href="@{/templates/subjects/computer_courses.html#projects}"><img th:src="@{/Images/courses/projects.png}" class="icon" />Projects</a></li>
         </ul>
         <div class="search" id="search-switch">
@@ -56,7 +56,7 @@
                 <div class="ccardbox2">
                     <div class="dcard2"><span class="tag">1/8</span>
                         <div class="fpart2"><img th:src="@{/Images/courses/digital.jpg}" />
-                            <iframe th:src="@{https://www.youtube.com/embed/-M7oIM8hKSU}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe th:src="@{https://www.youtube.com/embed/uup17d6R49k?si=7KMDJpNU_VWnhb46}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                     <!-- Add more video cards here -->

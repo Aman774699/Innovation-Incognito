@@ -8,24 +8,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/Module")
-public class Modulecontroller extends UserContoller   {
+public class Modulecontroller extends UserContoller {
 
 
     @GetMapping("/computer_Courses")
-    public String ComputerCourses(Model model)
-    {
-        if(super.userLogin==null)
-        {
+    public String ComputerCourses(Model model) {
+        if (super.userLogin == null) {
             return "Login";
         }
         return "subjects/computer_courses";
     }
 
     @GetMapping("/gate")
-    public String Gateway()
-    {
-        if(super.userLogin==null)
-        {
+    public String Gateway() {
+        if (super.userLogin == null) {
             return "Login";
         }
 
@@ -33,22 +29,30 @@ public class Modulecontroller extends UserContoller   {
     }
 
     @GetMapping("/jee")
-    public String Maths()
-    {
-        if(super.userLogin==null)
-        {
+    public String Maths() {
+        if (super.userLogin == null) {
             return "Login";
         }
 
         return "/subjects/jee";
     }
+
     @GetMapping("/quiz")
-        public String Quiz()
-        {
-            if(super.userLogin==null)
-            {
-                return "Login";
-            }
-            return "/subjects/quiz";
+    public String Quiz() {
+        if (super.userLogin == null) {
+            return "Login";
         }
+        return "/subjects/quiz";
+    }
+
+    @GetMapping("/datastructure")
+    public String DataStructure() {
+        if (super.userLogin == null) {
+            return "Login";
+        }
+        return "/subjects/datastructure";
+    }
 }
+
+
+
