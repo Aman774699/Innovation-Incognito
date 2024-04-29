@@ -36,8 +36,10 @@
         <div class="srch"><input type="text" class="search" placeholder="Search here..."><img th:src="@{/Images/icon/search.png}" alt="search" onclick="slide()"></div>
         <div class="right-btns">
             <ul>
-                <li><a class="get-started" th:href="@{/user/login}">Login</a></li>
-                <li><a class="get-started" th:href="@{/user/profile}">Profile</a></li>
+<!--                <li><a class="get-started" th:href="@{/user/login}">Login</a></li>-->
+                <li><a class="get-started" th:href="@{/user/logout}">Logout</a></li>
+<!--                <li><a class="get-started" th:text="${usernname}"></a></li>-->
+
             </ul>
         </div>
 
@@ -131,8 +133,8 @@
     <div class="csec"></div>
     <div class="back-contact">
         <div class="cc">
-            <form th:action="@{/user/message}" method="post" enctype="text/plain">
-                <label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name <span class="imp">*</span></label><br>
+            <form th:action="@{/user/message}" method="post" th:object="${admin}" >
+                <label>First Name<span class="imp">*</span></label><label style="margin-left: 185px">Last Name <span class="imp">*</span></label><br>
                 <center>
                     <input type="text" name="fname" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
                 </center>
@@ -141,7 +143,7 @@
                 <label>Subject <span class="imp">*</span></label><br>
                 <input type="text" name="subject" style="width: 100%" required="required"><br>
                 <label>Message</label><br>
-                <textarea name="message"></textarea><br>
+                <textarea name="textarea"></textarea><br>
                 <button type="submit" id="csubmit">Send Message</button>
             </form>
         </div>

@@ -1,9 +1,6 @@
 package com.hackthon.innovationIncognito.otpvalidation;
 
-import javax.mail.Authenticator;
-import javax.mail.PasswordAuthentication;
-import javax.mail.Session;
-import javax.mail.Transport;
+import javax.mail.*;
 import java.util.Properties;
 import java.util.Random;
 import javax.mail.internet.InternetAddress;

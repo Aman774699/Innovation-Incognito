@@ -44,7 +44,6 @@ public class UserContoller {
         User userValid = userRepositary.getUserByEmailAndPassword(email, password);
         if (userValid == null) {
             return "login";
-
         }
         userLogin = userValid;
         model.addAttribute("user", userLogin);
