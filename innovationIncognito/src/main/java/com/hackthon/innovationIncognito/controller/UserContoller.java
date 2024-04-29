@@ -67,9 +67,9 @@ public class UserContoller {
         return "Login";
     }
 
-    @PostMapping("/updateProfile")
-    @ResponseBody
-    public String UpdateProfile(@ModelAttribute("User") User user, Model model) {
+    @GetMapping ("/updateProfile")
+
+    public String UpdateProfile( Model model) {
         if (!b ) {
             return "login";
         }
