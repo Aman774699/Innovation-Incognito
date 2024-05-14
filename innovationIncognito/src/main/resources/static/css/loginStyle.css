@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/Images/extra/backwallpaper.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/Images/bt.jpg");
     background-size: cover;
     background-attachment: fixed;
     display: flex;

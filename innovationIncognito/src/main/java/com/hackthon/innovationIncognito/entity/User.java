@@ -1,5 +1,6 @@
 package com.hackthon.innovationIncognito.entity;
 
+import ch.qos.logback.core.joran.spi.DefaultClass;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -22,9 +23,29 @@ public class User {
     private String email;
     @Column(length = 10)
     private String phoneNumber;
+    @Column(columnDefinition = "VARCHAR(255)")
+    private  String profilePicture;
     @OneToMany
     private List<Solvedstatus> solvedstatus;
-    private String Profilephoto;
+
+    public String getProfilePicture() {
+        return profilePicture;
+    }
+
+    public void setProfilePicture(String profilePicture) {
+        this.profilePicture = profilePicture;
+    }
+
+    public List<Solvedstatus> getSolvedstatus() {
+        return solvedstatus;
+    }
+
+    public void setSolvedstatus(List<Solvedstatus> solvedstatus) {
+        this.solvedstatus = solvedstatus;
+    }
+
+
+
     public Integer getUserid() {
         return Userid;
     }
@@ -84,4 +105,16 @@ public class User {
     }
     public User() {
     }
+
+    public User(Integer userid, String userName, String password, String conformPassword, String email, List<Solvedstatus> solvedstatus, String phoneNumber, String profilePicture) {
+        Userid = userid;
+        this.userName = userName;
+        this.password = password;
+        this.conformPassword = conformPassword;
+        this.email = email;
+        this.solvedstatus = solvedstatus;
+        this.phoneNumber = phoneNumber;
+        this.profilePicture = profilePicture;
+    }
 }
+

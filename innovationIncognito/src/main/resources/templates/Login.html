@@ -21,9 +21,9 @@
     </div>
 
     <!-- Login Form -->
-    <form id="login" class="input-group" th:action="@{/user/proces}" method="post" th:object="${user}">
+    <form id="login" class="input-group" th:action="@{/authorized/success}"  method="post" th:object="${user}">
         <div class="inp">
-            <img th:src="@{/Images/icon/user.png}"><input type="text" id="email"  name="email" class="input-field" placeholder="User Email" style="width: 88%; border:none;" required="required">
+            <img th:src="@{/Images/icon/user.png}"><input type="text" id="email"  name="username" class="input-field" placeholder="User Email" style="width: 88%; border:none;" required="required">
         </div>
         <div class="inp">
             <img th:src="@{/Images/icon/password.png}"><input type="password" id="password" name="password" class="input-field" placeholder=" User Password" style="width: 88%; border: none;" required="required">
